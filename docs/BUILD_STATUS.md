@@ -22,3 +22,13 @@ Read contracts/app-v1.md, docs/EXECUTION_PLAN.md and this status. Use `.data-ven
 - All three workers acknowledged frozen contract. Dependencies installed and pinned.
 - Baseline 1440×900 screenshot saved; current local preview http://localhost:5173.
 - Coordinator assembly implementation in progress; do not treat as verified until actual outputs arrive.
+
+## G1/G2 numerical integration
+- G0 pushed: `e4bb5ec`.
+- A complete: full 8,760-hour run, 71,862 links, real Dec 10–11 replay; 57.24 s rebuild, 1.106 GB peak RSS. Eight model tests and ten data invariants pass.
+- B complete: 25 named/frontier plans at $2m/$5m/$10m benchmark price; eight sensitivities. All solves optimal; six tests and seven output invariants pass.
+- $5m Financial/Balanced coincide (4 sites, $19.754m NPV, 3.6401% reduction). Do not imply a difference. $10m Balanced is distinct (10.611% vs Financial 5.248%).
+- Assembly validates budgets, totals, ordering and all before/after frames. Analytical initial assets 2,558,309 gzip bytes; largest plan 648,991 gzip bytes (compression measurement, server transfer may be uncompressed).
+- C delivered UI; real globe → region → replay → source economics verified in Chrome. C retains ownership for legend, chart labels and intentional basemap fallback control.
+- Coordinator preview: http://localhost:5174 (Vite dev). Existing port 5173 is a production preview and needs a rebuilt dist to reflect changes.
+- Next: finish browser walkthrough and projector-size checks, update pitch to honestly show aligned $5m objectives and distinct $10m tradeoff, create draft PR after frontend checkpoint.

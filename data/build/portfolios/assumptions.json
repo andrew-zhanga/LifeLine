@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "model_version": "screening-v1",
+  "provenance": [
+    {
+      "path": "contracts/parameters.json",
+      "sha256": "678b91b346e2bf0fb154627f5a63190bdb16ac640162387a40f7d971f232ab61"
+    },
+    {
+      "path": "data/verified/processed/flares_regional_2023.geojson",
+      "sha256": "ab9e4b61c141c0fa45e0ef47d911b746bb88f14e4384c7702a0bad4a1ce00839"
+    },
+    {
+      "path": "data/verified/processed/pipelines.geojson",
+      "sha256": "c0bab512a85ca88be458bcaa1653f40c5a7f1e6974820d8a3204163663acd7dc"
+    },
+    {
+      "path": "data/verified/processed/gas_price_2023.json",
+      "sha256": "2ae44965edff8667754d01fef795824d568dcb2be8132db9d4c21770f0dfc3d6"
+    }
+  ],
+  "assumption_version": "screening-2023-v1",
+  "parameters": {
+    "schema_version": "1.0",
+    "model_version": "screening-v1",
+    "capture_fraction": 0.9,
+    "sellable_fraction": 0.95,
+    "heating_value_mmbtu_per_mcf": 1.1,
+    "ft3_per_m3": 35.3146667,
+    "life_years": 7,
+    "discount_rate": 0.1,
+    "capex_base_usd": 250000,
+    "capex_per_pipeline_km_usd": 350000,
+    "capex_capacity_usd": 125000,
+    "capex_capacity_reference_mcf_day": 100,
+    "capex_capacity_exponent": 0.6,
+    "annual_fixed_opex_fraction": 0.03,
+    "variable_opex_usd_per_mmbtu": 0.5,
+    "budgets_usd": [
+      2000000,
+      5000000,
+      10000000
+    ],
+    "cutoff_km": 30,
+    "wind_height_m": 100,
+    "calm_threshold_mps": 0.5,
+    "kernel_width_base_km": 1,
+    "kernel_width_slope": 0.15,
+    "kernel_decay_km": 15,
+    "balanced_npv_retention": 0.95,
+    "solver_time_limit_seconds": 5,
+    "assumption_version": "screening-2023-v1"
+  },
+  "benchmark_price_usd_per_mmbtu": 2.533574297188755,
+  "price_scenarios": {
+    "low": 1.5,
+    "benchmark": 2.533574297188755,
+    "high": 4.0
+  },
+  "units": {
+    "capex": "USD",
+    "npv": "USD over seven years",
+    "pipeline_distance": "km in EPSG:32614",
+    "annual_captured": "m3/year",
+    "annual_sellable": "MMBtu/year"
+  },
+  "basis": {
+    "benchmark_price": "Observed mean of 249 available 2023 Henry Hub daily prices; not site netback.",
+    "economic_coefficients": "All capture, sellable fraction, heating value, cost, lifetime and discount coefficients are explicit screening assumptions, not measured site composition or installation quotes.",
+    "pipeline_distance": "Nearest downloaded line segment; no evidence of feasible access, capacity, rights, or construction route. Geometry vintage is not established as 2023.",
+    "volume": "Satellite-estimated 2023 annual gas; constant annual baseline, not observed hourly operation.",
+    "payback": "Simple undiscounted capex / first-year positive margin; not a claim payback occurs within project life.",
+    "edge_effect": "Flag if nearest downloaded segment is farther than the clipped-data boundary. Unflagged distances exclude only clipping edge effects, not missing inventory."
+  },
+  "edge_effect_possible_count": 3
+}
