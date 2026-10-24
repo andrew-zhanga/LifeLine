@@ -1,0 +1,17 @@
+{
+  "duration_seconds": 179.97,
+  "resolution": "1920x1080",
+  "frame_rate": 30,
+  "video_codec": "H.264",
+  "audio_codec": "AAC stereo 48kHz",
+  "tts_voice": "macOS Samantha",
+  "decode_passed": true,
+  "bytes": 8092324,
+  "sha256": "0e35415670f198e35e61e83c97476272d5eaae6682537594730abee8008d4910",
+  "visuals": "Verified browser screenshots, sourced cards, 30s actual live WebGL recording",
+  "source_recording": "flarewise-scene.webm",
+  "narration_words": 391,
+  "subtitles": "Optional SRT with approximate sentence timing",
+  "audio_mean_db": -18.7,
+  "audio_peak_db": -4.7
+}

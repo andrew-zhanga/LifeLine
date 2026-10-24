@@ -1,5 +1,7 @@
 # Three-minute live demo: operator cues
 
+**Earlier live-rehearsal route.** The final narrated video now uses the problem-first, rubric-aligned `three-minute-script.md`; see `video/README.md` for its updated timing. This click sheet remains a manual product-tour reference, not the final video edit list.
+
 Use this short route for the timed pitch. The longer route in `README.md` is an exploration/Q&A menu, not the live click sequence. These cues are grounded in the current UI and saved results; the coordinator owns the actual browser rehearsal and measured timing.
 
 **Twelve button clicks and one scroll. No budget dropdown, layer menu, camera drag, source dropdown, timeline scrub, or scenario export is needed.** The only live animation is the transport replay. Keep the cursor still while the speaker makes a claim.

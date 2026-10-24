@@ -1,74 +1,37 @@
-# FlareWise — three-minute judge demo
+# FlareWise — rubric-aligned three-minute pitch
 
-**The story:** turn a capture budget into an investment decision that accounts for both gas value and people downwind. The decisive moment is the Financial → Balanced switch: roughly double the population-weighted index improvement while retaining 95.5% of financial value.
+Final script for the narrated demo. Read only blockquotes; the stage directions and source notes are not spoken. Four judging criteria receive a clear evidence-bearing section: challenge, creativity, technical feasibility and scale. Target: 180 seconds at a confident conversational pace.
 
-Read only the quoted narration. Stage directions are for the operator. Rehearse at approximately 140–150 words per minute, allowing the remaining time for transitions. Use the companion `demo-operator-cues.md` for exact controls and recovery. Leave methods, diagnostics and extra controls closed during the main pitch.
+## 0:00–0:40 · Sustainability challenge
 
-## 0:00–0:20 · The problem, on the globe
+**Visual:** global home; transition into Eagle Ford near the end. Use a brief opening overlay for the global statistics so the audience does not mistake 2025 totals for the app's 2023 inventory.
 
-**Screen:** global home. Begin with the page fully loaded; allow the globe to establish the scale.
+> “In 2025, the world burned 167 billion cubic meters of gas through flaring: an estimated 54 billion dollars in wasted value. This is also a community issue. A study in Eagle Ford associated high nearby flaring with fifty percent higher odds of preterm birth. Operators face a practical question: with limited capital, which flares should they fix first? FlareWise connects that investment decision to the people downwind. Recovering gas creates a financial reason to act; targeting the right sources makes community priorities part of the investment case.”
 
-> “Gas flaring burns a valuable resource, while communities live downwind. But with a limited capture budget, which flares should we fix first? FlareWise connects the business case to the people affected. We start with 8,783 satellite-estimated flare sites across 77 countries.”
+## 0:40–1:25 · Creativity and measurable value
 
-## 0:20–0:40 · Bring the decision to South Texas
+**Visual:** Communities; $10 million, All residents. Financial → Balanced → Community. Let each click settle before reading its result.
 
-**Action:** click **Explore Eagle Ford**. Let the regional map settle. Then open **Simulation workbench** → **Communities**, leaving **$10m** and **All residents** selected; click **Financial** before the next passage.
+> “Our users are operator capital teams, working with health, safety and environment teams and public-health planners. In South Texas, we evaluate 392 candidates using gas volumes, economics, hourly winds and real Census demographics. Give us ten million dollars. Financial delivers 33.6 million in projected seven-year net present value and a 5.2 percent reduction in our population-weighted exposure index. Now switch to Balanced: retain 95.5 percent of financial value while more than doubling that index improvement to 10.6 percent. Community prioritization reaches 22.2 percent. The creative step is making these competing priorities one explicit, inspectable investment decision.”
 
-> “Here in South Texas, we evaluate 392 capture candidates. We connect gas volumes and project economics with a full year of hourly wind data and real Census demographics. The result is a specific investment shortlist, with a clear explanation of which communities benefit.”
+## 1:25–2:15 · Technical feasibility
 
-## 0:40–1:25 · The investment reveal
+**Visual:** Transport, play, then compare capture installed at 22:00. Transition to Satellite lab for the final two sentences.
 
-**Screen:** Communities, $10 million, All residents. Hold each strategy long enough to see its selected sites and metrics. Financial → Balanced is the hero transition; Community completes the choice.
+> “Underneath, integer optimization selects actual projects within budget. Annual analysis uses every hour of weather, while Census attribution shows which tracts benefit. This interactive three-dimensional replay follows moving emissions. Compare capture installed at ten p.m.: new emissions shrink while previously emitted material continues downwind. GPU-instanced rendering delivered about sixty frames per second in our local test. We also trained a twelve-band Sentinel-2 U-Net for industrial-smoke segmentation. On 374 held-out images, its intersection-over-union reached 47.1 percent, versus 23.6 percent for a simple RGB heuristic. These are saved predictions and a reproducible model. Forty-one tests verify the build.”
 
-> “Give us a ten-million-dollar budget. Financial chooses the strongest economic portfolio: 33.6 million dollars in projected seven-year net present value, with a 5.2 percent improvement in our population-weighted exposure index.”
+## 2:15–3:00 · Path to scale and TotalEnergies relevance
 
-**Action:** click **Balanced**.
+**Visual:** return Communities → Balanced for the hero metrics. Optionally use a concise closing overlay: “Pilot → validate → expand basin by basin.” Keep the selected map visible underneath.
 
-> “Now watch the selected sites change. Balanced keeps 95.5 percent of that financial value, while more than doubling the index improvement to 10.6 percent. That's the opportunity this tool uncovers: a better community outcome without giving up most of the business case.”
+> “TotalEnergies has committed to ending routine flaring by 2030. FlareWise could help turn that commitment into a prioritized project pipeline. Our proposed first pilot pairs one asset team's engineering costs and infrastructure constraints with local environmental validation. Success means a shortlist ready for engineering review, with economics and community priorities assessed together. We would measure recovered gas, project returns and independently verified emissions changes. Then expand basin by basin through regional weather, population and infrastructure data. Our global inventory already provides discovery across 77 countries. Our vision is a new standard for climate investment: every dollar evaluated for both economic return and the communities it can benefit. FlareWise makes that future actionable.”
 
-**Action:** click **Community**.
+## Sources and claim notes — not spoken
 
-> “Prioritize communities, and the index improvement reaches 22.2 percent. We can also prioritize actual counts of young children or older residents. Each choice maps back to specific sites and Census tracts.”
+- **Problem statistics:** [World Bank 2026 Global Gas Flaring Tracker](https://www.worldbank.org/en/programs/gasflaringreduction/publication/2026-global-gas-flaring-tracker-report), covering calendar 2025. These are worldwide total-flaring figures, not this application's calculated impact or TotalEnergies' emissions. The app currently displays the separate 2023 World Bank inventory.
+- **Health motivation:** [Cushing et al., 2020, Environmental Health Perspectives](https://pubmed.ncbi.nlm.nih.gov/32673511/). The retrospective Eagle Ford study reported OR 1.50 for preterm birth comparing high nightly flare-event exposure with none. “Associated” and “odds” are deliberate. This is motivation for considering communities, not a causal result or a health prediction from FlareWise.
+- **Strategic relevance:** [TotalEnergies: Reducing Our Emissions](https://totalenergies.com/sustainability/climate-and-sustainable-energy/reducing-our-emissions), “Eliminating routine flaring by 2030.” The proposed pilot is an opportunity, not an existing partnership; routine flaring does not include safety flaring.
+- **Built-product results:** `data/build/community/community.json`, `data/build/experiments/results.json`, `reports/extensions/verification.json`, and `reports/extensions/performance-1366.txt`. Financial and community percentages measure the annual population-weighted index. The separate transport replay illustrates intervention timing; the separate U-Net evaluates European industrial-smoke segmentation.
+- **Scale path:** engineering-cost integration, pilot validation, and further regional analytical coverage are proposed next steps. Global inventory is already built. Do not say global financial optimization is complete.
 
-## 1:25–2:10 · Make the intervention visible
-
-**Action:** click **Transport**. Use the default 23:00 UTC view, with capture off. Start **Play transport replay**; let the smoke move for several seconds. Click **Install 90% capture** while playback continues. Keep the camera stable so the change is legible.
-
-> “Now make the intervention visible. This three-dimensional wind replay follows emissions as they move from real source locations toward populated areas. The wind, moving plumes and downstream response share the same timeline.”
-
-**Action:** capture on; gesture toward the source plumes and linked chart, without opening another panel.
-
-> “Compare the baseline with capture installed at ten p.m. New emissions fall; material emitted before installation keeps moving. That time delay matters: fixing a source doesn't instantly clear everything around it. The chart connects the intervention to the downstream response. We built this with time-dependent puff transport and GPU-instanced rendering, so the scene stays responsive as more than a thousand puffs move.”
-
-## 2:10–2:40 · Show the trained model
-
-**Action:** click **Satellite lab** (transport pauses automatically). Show the metrics, then scroll down about one screen over the image column to reveal the median and highest-IoU prediction panels. Keep the example labels visible; the headline score remains the aggregate 47.1%, not the best single image.
-
-> “We also trained a U-Net to segment industrial smoke from twelve-band Sentinel-2 imagery. On 374 held-out images, it achieved 47.1 percent intersection-over-union, compared with 23.6 percent for a simple RGB heuristic. Here are the human masks and our model's predictions. This gives us a concrete research foundation for expanding how we observe emissions.”
-
-## 2:40–3:00 · Return to the decision
-
-**Action:** click **Communities**, then **Balanced**. Confirm $10 million and All residents; finish on the selected investment map and its metrics.
-
-> “FlareWise brings satellite data, weather, Census demographics, investment optimization and interactive transport into one decision workflow. The result: retain over 95 percent of financial value while more than doubling the exposure-index improvement. The pitch is simple: don't just find the biggest flares. Find the investments that recover value and put communities into the decision.”
-
-## Keep for questions, not the opening three minutes
-
-- **“What if weather or prices change?”** Open Stress tests. Show fixed-site seasonal performance and the economic scenario range.
-- **“How does this account for vulnerable communities?”** On Communities, choose Community, then Under 5 or Age 65+. Explain that the optimization uses actual demographic counts. Use $5 million to show a distinct age-priority selection.
-- **“Is this global?”** Open Global inventory and search a country. The inventory is global; the completed investment analysis is South Texas.
-- **“Did you really train it?”** Show Satellite lab's split, held-out scores and image examples; the checkpoint and reproducible training scripts are saved.
-- **“How fast is the rendering?”** Open Transport diagnostics while playing. The recorded local test was approximately 60 FPS with 1,241 visible puffs. Describe the current live measurement if it differs.
-- **“Can we inspect a source?”** Select a source in Transport to frame its plume; the external satellite-map link opens its coordinates.
-
-## Numbers to memorize
-
-| $10m portfolio | Seven-year NPV | All-resident index reduction |
-|---|---:|---:|
-| Financial | $33.64m | 5.25% |
-| Balanced | $32.13m | 10.61% |
-| Community | $19.72m | 22.22% |
-
-Balanced retains **95.51%** of Financial NPV. The percentages above describe the population-weighted model index, not measured disease reductions. The transport replay and satellite experiment are distinct components; do not describe the U-Net as controlling the displayed plumes. These distinctions need not interrupt the main pitch: the narration already names what each result measures.
-
-Evidence: `presentation/extensions/README.md`, `reports/extensions/verification.json`, `data/build/experiments/results.json`, and `reports/extensions/performance-1366.txt`.
+The main narration leads with success and keeps technical distinctions in the nouns: projected NPV, exposure index, replay, held-out segmentation and proposed pilot. It does not require an on-stage limitations detour.

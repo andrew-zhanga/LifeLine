@@ -40,3 +40,8 @@ Use `satellite-experiment.{png,svg}` for the learning curve and comparison. The 
 ## Timed live demo
 
 Use [three-minute-script.md](three-minute-script.md) for the spoken pitch and [demo-operator-cues.md](demo-operator-cues.md) for the matching 12-click, one-scroll route. The live browser rehearsal and screenshots are in [rehearsal/README.md](rehearsal/README.md). This shorter route supersedes the exploration sequence above for timed judging.
+
+
+## Narrated video — rubric-aligned final pitch
+
+[Play the three-minute MP4](video/FlareWise-3-minute-demo.mp4). The revised [script](three-minute-script.md) leads with sourced flaring waste and health relevance, demonstrates the product, and closes with stakeholders, TotalEnergies relevance and scale. See [rubric and sources](rubric-and-sources.md) and [video production notes](video/README.md). This final script supersedes the earlier feature-tour narration.
