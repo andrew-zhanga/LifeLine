@@ -8,3 +8,14 @@
 .legend.inspection-legend{left:340px;right:auto}
 @media(max-width:1050px){.legend.inspection-legend{left:280px}}
 .country-inspection{position:absolute;top:160px;left:48px;width:355px;padding:26px;z-index:3}.country-inspection-date{display:block;font-size:12px;color:#9cb5c1;margin-top:27px}.country-inspection h1{font-size:37px;font-weight:450;letter-spacing:-1px;margin:10px 0 25px}.country-inspection-stats{display:flex;flex-direction:column;gap:20px}.country-inspection-stats strong{font-size:28px;font-weight:450;display:block;color:#e5c19b}.country-inspection-stats small{font-size:16px}.country-inspection-stats span{font-size:12px;color:#a3bbc8;display:block;margin-top:5px}.country-inspection p{font-size:12px;line-height:1.8;color:#9eb6c3;margin:24px 0}.country-inspection-inventory{display:flex;align-items:center;gap:8px;font-size:13px;color:#b4deca;border:1px solid #4c7266;border-radius:5px;padding:12px;width:100%;margin-bottom:12px}.country-inspection .primary{width:100%;font-size:13px;padding:13px 14px}.country-inspection-foot{display:block;font-size:11px;color:#7f9daa;margin-top:20px;line-height:1.6}@media(max-height:800px){.country-inspection{top:120px;padding:22px}.country-inspection-date{margin-top:22px}.country-inspection h1{font-size:33px;margin-bottom:20px}.country-inspection-stats{gap:16px}}@media(max-width:760px){.country-inspection{left:20px;top:100px;width:300px}}
+
+/* Ember: shared typography and interaction treatment. */
+:root{--ember-accent:#f4b575;--ember-focus:#a8dfbc;--ember-radius:8px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--ember-focus);outline-offset:3px}
+.demo-badge{border-radius:var(--ember-radius);padding:9px 12px}
+.header-right{gap:12px}
+.hero-note,.plan-caption,.detail-note{font-size:12px;line-height:1.65}
+.hero-note{color:#9bb2be}
+.brand{letter-spacing:-.8px}
+button:disabled{cursor:default;opacity:.5}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
