@@ -35,3 +35,8 @@ Use `satellite-experiment.{png,svg}` for the learning curve and comparison. The 
 ## Rendering evidence
 
 `reports/extensions/performance-1366.txt`: 1366×768 production playback, 180-frame/3-second sample, median 16.7 ms, p95 17.6 ms, 1,241 visible puffs, 39 draw calls, 0% frames over 33 ms. Report the device-specific measurement, not a universal performance promise. `08-transport-1366.png` shows the scene; `09-nigeria-inspection.png` and `10-satellite-lab.png` show the completed added views. Earlier screenshots retain their original viewport sizes.
+
+
+## Timed live demo
+
+Use [three-minute-script.md](three-minute-script.md) for the spoken pitch and [demo-operator-cues.md](demo-operator-cues.md) for the matching 12-click, one-scroll route. The live browser rehearsal and screenshots are in [rehearsal/README.md](rehearsal/README.md). This shorter route supersedes the exploration sequence above for timed judging.
