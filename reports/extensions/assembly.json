@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "source_commit": "ff45117740d5c8fa81fb7fa10a58c087c5304e40",
+  "checks": {
+    "transport": {
+      "finite_nonnegative_receptor_proxy": true,
+      "capture_does_not_increase_receptor_proxy": true,
+      "preinstall_mass_unchanged": true,
+      "mass_budget_baseline": true,
+      "mass_budget_capture": true,
+      "timestep_receptor_l1_under_one_percent": true,
+      "pulse_refinement_l1_under_five_percent": true,
+      "export_rounding_l1_under_point_one_percent": true,
+      "geometry_finite_bounded": true
+    },
+    "community": {
+      "source_tract_regional_conservation": true,
+      "allocated_age_counts_conserved": true,
+      "all_hours_seasons_reconcile_annual": true,
+      "selected_ids_unique_eligible": true,
+      "all_budgets_feasible": true,
+      "reductions_never_exceed_baseline": true
+    }
+  },
+  "artifacts": [
+    {
+      "url": "/data/extensions/transport/scene.json",
+      "bytes": 4214278,
+      "gzip_bytes": 1264623,
+      "sha256": "a85519fc4093dcd3ee1eb99b93a26e07d47b8f0164e20b918a2930594aecc735"
+    },
+    {
+      "url": "/data/extensions/transport/diagnostics.json",
+      "bytes": 4157,
+      "gzip_bytes": 2073,
+      "sha256": "17fe9f46859feb40843d7184c4ac438ae2c280df470df45857070d68014652cc"
+    },
+    {
+      "url": "/data/extensions/community/community.json",
+      "bytes": 10333786,
+      "gzip_bytes": 1730118,
+      "sha256": "a586deec8b67ea0462079fbd923071a5b404851d116012384b4220a90064ae8b"
+    },
+    {
+      "url": "/data/extensions/community/robustness.json",
+      "bytes": 97261,
+      "gzip_bytes": 29061,
+      "sha256": "97cc059598df0ce18cec3d43af67f204da6cb532f92863eb169962f46db503d5"
+    }
+  ],
+  "original_assets_unchanged": true
+}
