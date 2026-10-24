@@ -20,7 +20,7 @@ def main():
    r=plan['regional'][group]
    assert r['baseline']>=r['residual']-1e-5 and r['residual']>=-1e-5
  artifacts=[]
- for part,names in [('transport',['scene.json','diagnostics.json']),('community',['community.json','robustness.json'])]:
+ for part,names in [('transport',['scene.json','diagnostics.json']),('community',['community.json','robustness.json','global-inventory.json'])]:
   for name in names:
    src=ROOT/'data/build'/part/name;dest=OUT/part/name;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dest)
    b=dest.read_bytes();artifacts.append({'url':f'/data/extensions/{part}/{name}','bytes':len(b),'gzip_bytes':len(gzip.compress(b)),'sha256':hashlib.sha256(b).hexdigest()})
