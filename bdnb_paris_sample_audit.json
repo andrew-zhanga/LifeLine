@@ -1,0 +1,1553 @@
+{
+  "retrieved_at_utc": "2026-10-24T02:06:31.228008+00:00",
+  "source_url": "https://api.bdnb.io/v1/bdnb/donnees/batiment_groupe_complet",
+  "sample_description": "Stable ID-ordered 10-row windows at offsets 0, 500, 1000, 1500 in Paris arrondissements 1, 11, 16, 20. Nonrandom pilot sample; coverage does not estimate citywide completeness.",
+  "n": 150,
+  "unique_ids": 150,
+  "columns": {
+    "alea_argile": {
+      "non_null": 0,
+      "pct": 0.0,
+      "distinct": 0,
+      "examples": []
+    },
+    "altitude_sol_mean": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 51,
+      "examples": [
+        "35",
+        "36",
+        "33",
+        "34",
+        "45"
+      ]
+    },
+    "annee_construction": {
+      "non_null": 141,
+      "pct": 94.0,
+      "distinct": 70,
+      "examples": [
+        "1880",
+        "1900",
+        "1870",
+        "1800",
+        "1850"
+      ]
+    },
+    "annee_construction_dpe": {
+      "non_null": 45,
+      "pct": 30.0,
+      "distinct": 30,
+      "examples": [
+        "1945",
+        "1900",
+        "1948",
+        "1880",
+        "1947"
+      ]
+    },
+    "arrete_2021": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 2,
+      "examples": [
+        "True",
+        "False"
+      ]
+    },
+    "batenr_favorabilite_geothermie_nappe": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "batenr_favorabilite_geothermie_sonde": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "batenr_favorabilite_solaire_thermique": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "batenr_potentiel_prod_solaire_thermique_annuelle": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 136,
+      "examples": [
+        "0",
+        "8.03",
+        "20.91",
+        "10.14",
+        "14.65"
+      ]
+    },
+    "batenr_potentiel_prod_solaire_thermique_ete": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 133,
+      "examples": [
+        "0",
+        "2.25",
+        "3.54",
+        "21.25",
+        "4.57"
+      ]
+    },
+    "batiment_groupe_id": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 150,
+      "examples": [
+        "bdnb-bg-127L-WVSA-CYLG",
+        "bdnb-bg-13C1-7MHZ-9PN1",
+        "bdnb-bg-153C-VUYF-K39F",
+        "bdnb-bg-163B-3M6X-MCVK",
+        "bdnb-bg-17QH-U628-8KC1"
+      ]
+    },
+    "chauffage_solaire": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 1,
+      "examples": [
+        "False"
+      ]
+    },
+    "classe_bilan_dpe": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 7,
+      "examples": [
+        "E",
+        "D",
+        "C",
+        "F",
+        "G"
+      ]
+    },
+    "classe_conso_energie_arrete_2012": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 3,
+      "examples": [
+        "D",
+        "F",
+        "E"
+      ]
+    },
+    "classe_conso_energie_dpe_tertiaire": {
+      "non_null": 47,
+      "pct": 31.3,
+      "distinct": 7,
+      "examples": [
+        "E",
+        "G",
+        "C",
+        "D",
+        "F"
+      ]
+    },
+    "classe_inertie": {
+      "non_null": 117,
+      "pct": 78.0,
+      "distinct": 4,
+      "examples": [
+        "Moyenne",
+        "Légère",
+        "Lourde",
+        "Très Lourde"
+      ],
+      "value_counts": {
+        "Moyenne": 40,
+        "Lourde": 28,
+        "Légère": 38,
+        "None": 33,
+        "Très Lourde": 11
+      }
+    },
+    "cle_interop_adr_principale_ban": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 147,
+      "examples": [
+        "75101_8635_00046",
+        "75101_7348_00019",
+        "75101_6537_00007",
+        "75101_8855_00002",
+        "75101_8635_00207"
+      ]
+    },
+    "code_commune_insee": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 4,
+      "examples": [
+        "75111",
+        "75116",
+        "75120",
+        "75101"
+      ]
+    },
+    "code_departement_insee": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 1,
+      "examples": [
+        "75"
+      ]
+    },
+    "code_epci_insee": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 1,
+      "examples": [
+        "200054781"
+      ]
+    },
+    "code_iris": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 100,
+      "examples": [
+        "751010401",
+        "751010201",
+        "751010301",
+        "751010402",
+        "751114404"
+      ]
+    },
+    "code_region_insee": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 1,
+      "examples": [
+        "11"
+      ]
+    },
+    "commune_parente": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 1,
+      "examples": [
+        "75056"
+      ]
+    },
+    "conso_3_usages_ep_m2_arrete_2012": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 3,
+      "examples": [
+        "205.48",
+        "441.32",
+        "308.16"
+      ]
+    },
+    "conso_5_usages_ep_m2": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 113,
+      "examples": [
+        "327.0",
+        "260.0",
+        "207.40179928818003",
+        "249.64908395762723",
+        "472.36541751514454"
+      ]
+    },
+    "conso_pro_dle_elec_2020": {
+      "non_null": 106,
+      "pct": 70.7,
+      "distinct": 37,
+      "examples": [
+        "0.0",
+        "214970.5",
+        "56369.1",
+        "44030.5",
+        "78858.6"
+      ]
+    },
+    "conso_pro_dle_gaz_2020": {
+      "non_null": 37,
+      "pct": 24.7,
+      "distinct": 9,
+      "examples": [
+        "0.0",
+        "311905.0",
+        "370383.4",
+        "464992.5",
+        "677507.7"
+      ]
+    },
+    "conso_res_dle_elec_2020": {
+      "non_null": 106,
+      "pct": 70.7,
+      "distinct": 90,
+      "examples": [
+        "0.0",
+        "37695.2",
+        "28616.6",
+        "83727.9",
+        "42993.0"
+      ]
+    },
+    "conso_res_dle_gaz_2020": {
+      "non_null": 37,
+      "pct": 24.7,
+      "distinct": 34,
+      "examples": [
+        "0.0",
+        "292233.0",
+        "145489.8",
+        "81372.7",
+        "231194.3"
+      ]
+    },
+    "contient_fictive_geom_groupe": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "contrainte_urbanisme_ac1": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "True",
+        "False"
+      ]
+    },
+    "croisement_geospx_reussi": {
+      "non_null": 133,
+      "pct": 88.7,
+      "distinct": 2,
+      "examples": [
+        "True",
+        "False"
+      ]
+    },
+    "date_reception_dpe": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 119,
+      "examples": [
+        "2025-09-10T12:08:17.310978",
+        "2025-06-10T11:40:23.538806",
+        "2025-08-13T15:29:48.35732",
+        "2022-08-31T09:15:43.920621",
+        "2026-02-09T11:48:37.669097"
+      ]
+    },
+    "denomination_monument_historique": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 91,
+      "examples": [
+        "Immeuble",
+        "eglise saint-jean-bosco",
+        "Charcuterie",
+        "regard saint-martin",
+        "\"Ancienne fabrique d'instruments de musique \" Gautrot-Couesnon \", actuellement immeuble de l'Union Fraternelle des Métallurgistes\""
+      ]
+    },
+    "distance_batiment_historique_plus_proche": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 106,
+      "examples": [
+        "0",
+        "34",
+        "9",
+        "7",
+        "12"
+      ]
+    },
+    "distance_monument_historique": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 106,
+      "examples": [
+        "0",
+        "34",
+        "9",
+        "7",
+        "12"
+      ]
+    },
+    "ecs_solaire": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 1,
+      "examples": [
+        "False"
+      ]
+    },
+    "emission_ges_3_usages_ep_m2_arrete_2012": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 3,
+      "examples": [
+        "6.69",
+        "14.37",
+        "58.22"
+      ]
+    },
+    "emission_ges_5_usages_m2": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 61,
+      "examples": [
+        "7.0",
+        "9.0",
+        "8.0",
+        "10.0",
+        "13.0"
+      ]
+    },
+    "epaisseur_lame": {
+      "non_null": 112,
+      "pct": 74.7,
+      "distinct": 9,
+      "examples": [
+        "16",
+        "12",
+        "6",
+        "14",
+        "18"
+      ]
+    },
+    "facteur_solaire_baie_vitree": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 15,
+      "examples": [
+        "0.44",
+        "0.47",
+        "0.38",
+        "0.52",
+        "0.4"
+      ]
+    },
+    "fiabilite_cr_adr_niv_1": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 3,
+      "examples": [
+        "données croisées à l'adresse fiables",
+        "données croisées à l'adresse moyennement fiables",
+        "données croisées à l'adresse fiables à l'echelle de la parcelle unifiee"
+      ]
+    },
+    "fiabilite_cr_adr_niv_2": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 4,
+      "examples": [
+        "batiment sans voisin à l'adresse",
+        "batiment sur parcelle unifiee avec adresses non-exclusives",
+        "batiment sur parcelle unifiee sans voisin à l'adresse",
+        "batiment dont les seuls voisins sont des dépendances"
+      ]
+    },
+    "fiabilite_emprise_sol": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 3,
+      "examples": [
+        "MOYENNE",
+        "BONNE",
+        "FAIBLE"
+      ]
+    },
+    "fiabilite_hauteur": {
+      "non_null": 144,
+      "pct": 96.0,
+      "distinct": 3,
+      "examples": [
+        "BONNE",
+        "MOYENNE",
+        "FAIBLE"
+      ]
+    },
+    "geom_groupe": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 0,
+      "examples": []
+    },
+    "hauteur_mean": {
+      "non_null": 145,
+      "pct": 96.7,
+      "distinct": 25,
+      "examples": [
+        "19",
+        "21",
+        "18",
+        "22",
+        "20"
+      ]
+    },
+    "id_reseau": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 2,
+      "examples": [
+        "7501C",
+        "7503F"
+      ]
+    },
+    "identifiant_dpe": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 119,
+      "examples": [
+        "2575E2859273C",
+        "2575E1895932N",
+        "2575E2616609W",
+        "2275E1954004Y",
+        "2675E0372669N"
+      ]
+    },
+    "indicateur_distance_au_reseau": {
+      "non_null": 105,
+      "pct": 70.0,
+      "distinct": 4,
+      "examples": [
+        "inferieure à 100m",
+        "entre 200 et 400m",
+        "entre 100 et 200m",
+        "raccordé au reseau de chaleur"
+      ]
+    },
+    "l_cle_interop_adr": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 0,
+      "examples": []
+    },
+    "l_denomination_proprietaire": {
+      "non_null": 128,
+      "pct": 85.3,
+      "distinct": 0,
+      "examples": []
+    },
+    "l_libelle_adr": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 0,
+      "examples": []
+    },
+    "l_orientation_baie_vitree": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 0,
+      "examples": []
+    },
+    "l_parcelle_id": {
+      "non_null": 146,
+      "pct": 97.3,
+      "distinct": 0,
+      "examples": []
+    },
+    "l_siren": {
+      "non_null": 128,
+      "pct": 85.3,
+      "distinct": 0,
+      "examples": []
+    },
+    "libelle_adr_principale_ban": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 147,
+      "examples": [
+        "46 Rue Saint-Honoré 75001 Paris 1er Arrondissement",
+        "19 Rue des Petits Champs 75001 Paris",
+        "7 Rue du Mont Thabor 75001 Paris 1er Arrondissement",
+        "2 Rue Sauval 75001 Paris 1er Arrondissement",
+        "207 Rue Saint-Honoré 75001 Paris 1er Arrondissement"
+      ]
+    },
+    "libelle_commune_insee": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 4,
+      "examples": [
+        "Paris 11e Arrondissement",
+        "Paris 16e Arrondissement",
+        "Paris 20e Arrondissement",
+        "Paris 1er Arrondissement"
+      ]
+    },
+    "mat_mur_txt": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 24,
+      "examples": [
+        "INDETERMINE",
+        "PIERRE",
+        "MEULIERE",
+        "BRIQUES - PIERRE",
+        "BRIQUES - MEULIERE"
+      ],
+      "value_counts": {
+        "MEULIERE": 14,
+        "BRIQUES - MEULIERE": 9,
+        "BOIS - PIERRE": 2,
+        "PIERRE": 23,
+        "BOIS - MEULIERE": 4,
+        "INDETERMINE": 43,
+        "AGGLOMERE - BOIS": 1,
+        "PIERRE - AUTRES": 3,
+        "BRIQUES - PIERRE": 13,
+        "MEULIERE - PIERRE": 7,
+        "AUTRES": 1,
+        "AGGLOMERE - MEULIERE": 1,
+        "BOIS": 1,
+        "BETON": 6,
+        "MEULIERE - AUTRES": 1,
+        "BETON - PIERRE": 5,
+        "AGGLOMERE - PIERRE": 1,
+        "None": 2,
+        "BETON - BRIQUES": 2,
+        "BRIQUES": 4,
+        "BETON - MEULIERE": 1,
+        "AGGLOMERE - BETON": 1,
+        "BETON - BOIS": 1,
+        "BRIQUES - AUTRES": 2,
+        "AGGLOMERE": 2
+      }
+    },
+    "mat_toit_txt": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 12,
+      "examples": [
+        "ZINC ALUMINIUM",
+        "INDETERMINE",
+        "ARDOISES - ZINC ALUMINIUM",
+        "TUILES",
+        "BETON"
+      ],
+      "value_counts": {
+        "ZINC ALUMINIUM": 50,
+        "TUILES - ZINC ALUMINIUM": 4,
+        "INDETERMINE": 44,
+        "ARDOISES - TUILES": 2,
+        "ZINC ALUMINIUM - AUTRES": 1,
+        "ARDOISES - ZINC ALUMINIUM": 17,
+        "TUILES": 10,
+        "ARDOISES": 7,
+        "BETON": 9,
+        "None": 2,
+        "BETON - AUTRES": 1,
+        "ARDOISES - AUTRES": 2,
+        "BETON - ZINC ALUMINIUM": 1
+      }
+    },
+    "materiaux_structure_mur_exterieur": {
+      "non_null": 118,
+      "pct": 78.7,
+      "distinct": 11,
+      "examples": [
+        "murs en pierre de taille et moellons constitué d'un seul matériaux",
+        "inconnu",
+        "murs en béton banché",
+        "murs en briques pleines simples",
+        "murs en pierre de taille et moellons avec remplissage tout venant"
+      ]
+    },
+    "methode_application_dpe_tertiaire": {
+      "non_null": 63,
+      "pct": 42.0,
+      "distinct": 4,
+      "examples": [
+        "dpe tertiaire facture",
+        "dpe tertiaire facture dans un bâtiment de logement",
+        "dpe tertiaire vierge",
+        "dpe tertiaire vierge dans un bâtiment de logement"
+      ]
+    },
+    "nb_adresse_valid_ban": {
+      "non_null": 147,
+      "pct": 98.0,
+      "distinct": 11,
+      "examples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "8"
+      ]
+    },
+    "nb_classe_bilan_dpe_a": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "nb_classe_bilan_dpe_b": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 3,
+      "examples": [
+        "0",
+        "2",
+        "180"
+      ]
+    },
+    "nb_classe_bilan_dpe_c": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 15,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "4",
+        "6"
+      ]
+    },
+    "nb_classe_bilan_dpe_d": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 21,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "nb_classe_bilan_dpe_e": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 16,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "nb_classe_bilan_dpe_f": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 9,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "5",
+        "3"
+      ]
+    },
+    "nb_classe_bilan_dpe_g": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 9,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_a": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 3,
+      "examples": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_b": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 2,
+      "examples": [
+        "0",
+        "1"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_c": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 5,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "7"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_d": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 9,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_e": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 5,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_f": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 4,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_g": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 4,
+      "examples": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ]
+    },
+    "nb_classe_conso_energie_arrete_2012_nc": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 11,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "nb_installation_chauffage": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 2,
+      "examples": [
+        "1",
+        "2"
+      ]
+    },
+    "nb_installation_ecs": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 2,
+      "examples": [
+        "1",
+        "2"
+      ]
+    },
+    "nb_log": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 46,
+      "examples": [
+        "0",
+        "11",
+        "1",
+        "7",
+        "14"
+      ]
+    },
+    "nb_log_rnc": {
+      "non_null": 91,
+      "pct": 60.7,
+      "distinct": 39,
+      "examples": [
+        "14.0",
+        "15.0",
+        "16.0",
+        "19.0",
+        "20.0"
+      ]
+    },
+    "nb_lot_garpark_rnc": {
+      "non_null": 91,
+      "pct": 60.7,
+      "distinct": 13,
+      "examples": [
+        "0.0",
+        "10.0",
+        "2.0",
+        "31.0",
+        "26.0"
+      ]
+    },
+    "nb_lot_tertiaire_rnc": {
+      "non_null": 91,
+      "pct": 60.7,
+      "distinct": 15,
+      "examples": [
+        "0.0",
+        "2.0",
+        "3.0",
+        "1.0",
+        "4.0"
+      ]
+    },
+    "nb_niveau": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 12,
+      "examples": [
+        "7",
+        "6",
+        "8",
+        "5",
+        "3"
+      ]
+    },
+    "nb_pdl_pro_dle_elec_2020": {
+      "non_null": 106,
+      "pct": 70.7,
+      "distinct": 5,
+      "examples": [
+        "0.0",
+        "1.0",
+        "2.0",
+        "5.0",
+        "3.0"
+      ]
+    },
+    "nb_pdl_pro_dle_gaz_2020": {
+      "non_null": 37,
+      "pct": 24.7,
+      "distinct": 3,
+      "examples": [
+        "0.0",
+        "1.0",
+        "2.0"
+      ]
+    },
+    "nb_pdl_res_dle_elec_2020": {
+      "non_null": 106,
+      "pct": 70.7,
+      "distinct": 36,
+      "examples": [
+        "0.0",
+        "15.0",
+        "13.0",
+        "16.0",
+        "12.0"
+      ]
+    },
+    "nb_pdl_res_dle_gaz_2020": {
+      "non_null": 37,
+      "pct": 24.7,
+      "distinct": 21,
+      "examples": [
+        "10.0",
+        "1.0",
+        "11.0",
+        "0.0",
+        "13.0"
+      ]
+    },
+    "nom_batiment_historique_plus_proche": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 91,
+      "examples": [
+        "Immeuble",
+        "eglise saint-jean-bosco",
+        "Charcuterie",
+        "regard saint-martin",
+        "\"Ancienne fabrique d'instruments de musique \" Gautrot-Couesnon \", actuellement immeuble de l'Union Fraternelle des Métallurgistes\""
+      ]
+    },
+    "nom_qp": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 1,
+      "examples": [
+        "Grand Belleville"
+      ]
+    },
+    "nom_quartier_qpv": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 1,
+      "examples": [
+        "Grand Belleville"
+      ]
+    },
+    "numero_immat_principal": {
+      "non_null": 91,
+      "pct": 60.7,
+      "distinct": 91,
+      "examples": [
+        "AA1628429",
+        "AD4700704",
+        "AA7908577",
+        "AB1594670",
+        "AD2450278"
+      ]
+    },
+    "perimetre_bat_historique": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "True",
+        "False"
+      ]
+    },
+    "pourcentage_surface_baie_vitree_exterieur": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 115,
+      "examples": [
+        "0.40417457305502846",
+        "0.29834966477565755",
+        "0.12126865671641791",
+        "0.30991735537190085",
+        "0.36083916083916084"
+      ]
+    },
+    "presence_balcon": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "quartier_prioritaire": {
+      "non_null": 3,
+      "pct": 2.0,
+      "distinct": 1,
+      "examples": [
+        "True"
+      ]
+    },
+    "s_geom_groupe": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 131,
+      "examples": [
+        "85",
+        "81",
+        "454",
+        "160",
+        "249"
+      ]
+    },
+    "surface_emprise_sol": {
+      "non_null": 150,
+      "pct": 100.0,
+      "distinct": 131,
+      "examples": [
+        "85",
+        "81",
+        "454",
+        "160",
+        "249"
+      ]
+    },
+    "traversant": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 5,
+      "examples": [
+        "non traversant",
+        "est ouest",
+        "tout azimut",
+        "nord sud",
+        "90°"
+      ]
+    },
+    "type_batiment_dpe": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 3,
+      "examples": [
+        "appartement",
+        "immeuble",
+        "maison"
+      ]
+    },
+    "type_dpe": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 3,
+      "examples": [
+        "dpe arrêté 2021 3cl logement",
+        "dpe arrêté 2021 3cl immeuble",
+        "dpe arrêté 2012 facture logement"
+      ]
+    },
+    "type_energie_chauffage": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 4,
+      "examples": [
+        "electricite",
+        "gaz",
+        "reseau de chaleur",
+        "fioul"
+      ]
+    },
+    "type_energie_chauffage_appoint": {
+      "non_null": 13,
+      "pct": 8.7,
+      "distinct": 3,
+      "examples": [
+        "electricite",
+        "gaz",
+        "bois"
+      ]
+    },
+    "type_energie_chauffage_tertiaire": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 4,
+      "examples": [
+        "electricite",
+        "gaz",
+        "reseau de chaleur",
+        "fioul"
+      ]
+    },
+    "type_fermeture": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 7,
+      "examples": [
+        "abscence de fermeture pour la baie vitrée",
+        "Jalousie accordéon, fermeture à lames orientables y compris les vénitiens extérieurs tout métal, volets battants ou persiennes avec ajours fixes",
+        "Fermeture sans ajours en position déployée, volets roulants alu",
+        "Persienne coulissante ou volet battant PVC, volet battant bois (e ≤ 22 mm)",
+        "Volet roulant PVC ( e ≤ 12 mm)"
+      ],
+      "value_counts": {
+        "abscence de fermeture pour la baie vitrée": 62,
+        "Fermeture sans ajours en position déployée, volets roulants alu": 8,
+        "None": 35,
+        "Persienne coulissante ou volet battant PVC, volet battant bois (e ≤ 22 mm)": 6,
+        "Volet roulant PVC ( e ≤ 12 mm)": 5,
+        "Jalousie accordéon, fermeture à lames orientables y compris les vénitiens extérieurs tout métal, volets battants ou persiennes avec ajours fixes": 26,
+        "Persienne coulissante ou volet battant PVC, volet battant bois (e > 22 mm)": 5,
+        "Volet roulant PVC ( e > 12 mm)": 3
+      }
+    },
+    "type_gaz_lame": {
+      "non_null": 114,
+      "pct": 76.0,
+      "distinct": 3,
+      "examples": [
+        "air sec",
+        "argon ou krypton",
+        "inconnu"
+      ]
+    },
+    "type_generateur_chauffage": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 8,
+      "examples": [
+        "generateurs a effet joule",
+        "chaudiere gaz standard",
+        "chaudiere gaz condensation",
+        "chaudiere gaz basse temperature",
+        "reseau de chaleur"
+      ]
+    },
+    "type_generateur_chauffage_anciennete": {
+      "non_null": 49,
+      "pct": 32.7,
+      "distinct": 3,
+      "examples": [
+        "récent(<15ans)",
+        "neuf",
+        "ancien"
+      ]
+    },
+    "type_generateur_chauffage_anciennete_appoint": {
+      "non_null": 4,
+      "pct": 2.7,
+      "distinct": 3,
+      "examples": [
+        "neuf",
+        "récent(<15ans)",
+        "très ancien"
+      ]
+    },
+    "type_generateur_chauffage_appoint": {
+      "non_null": 13,
+      "pct": 8.7,
+      "distinct": 4,
+      "examples": [
+        "generateurs a effet joule",
+        "chaudiere gaz condensation",
+        "chaudiere gaz standard",
+        "poele ou insert bois"
+      ]
+    },
+    "type_generateur_climatisation": {
+      "non_null": 4,
+      "pct": 2.7,
+      "distinct": 1,
+      "examples": [
+        "pac air/air"
+      ],
+      "value_counts": {
+        "None": 146,
+        "pac air/air": 4
+      }
+    },
+    "type_generateur_climatisation_anciennete": {
+      "non_null": 4,
+      "pct": 2.7,
+      "distinct": 2,
+      "examples": [
+        "neuf",
+        "récent(<15ans)"
+      ]
+    },
+    "type_generateur_ecs": {
+      "non_null": 119,
+      "pct": 79.3,
+      "distinct": 8,
+      "examples": [
+        "ballon accumulation electrique",
+        "chaudiere gaz condensation",
+        "chaudiere gaz standard",
+        "chaudiere gaz basse temperature",
+        "reseau de chaleur"
+      ]
+    },
+    "type_generateur_ecs_anciennete": {
+      "non_null": 39,
+      "pct": 26.0,
+      "distinct": 4,
+      "examples": [
+        "récent(<15ans)",
+        "neuf",
+        "ancien",
+        "très ancien"
+      ]
+    },
+    "type_generateur_ecs_anciennete_appoint": {
+      "non_null": 6,
+      "pct": 4.0,
+      "distinct": 2,
+      "examples": [
+        "neuf",
+        "récent(<15ans)"
+      ]
+    },
+    "type_generateur_ecs_appoint": {
+      "non_null": 13,
+      "pct": 8.7,
+      "distinct": 4,
+      "examples": [
+        "ballon accumulation electrique",
+        "chaudiere gaz standard",
+        "chaudiere gaz condensation",
+        "chaudiere gaz basse temperature"
+      ]
+    },
+    "type_installation_chauffage": {
+      "non_null": 117,
+      "pct": 78.0,
+      "distinct": 2,
+      "examples": [
+        "individuel",
+        "collectif"
+      ]
+    },
+    "type_installation_ecs": {
+      "non_null": 117,
+      "pct": 78.0,
+      "distinct": 2,
+      "examples": [
+        "individuel",
+        "collectif"
+      ]
+    },
+    "type_isolation_mur_exterieur": {
+      "non_null": 118,
+      "pct": 78.7,
+      "distinct": 4,
+      "examples": [
+        "non isole",
+        "ITI",
+        "inconnu",
+        "ITE"
+      ],
+      "value_counts": {
+        "non isole": 66,
+        "inconnu": 9,
+        "None": 32,
+        "ITI": 36,
+        "ITE": 7
+      }
+    },
+    "type_isolation_plancher_bas": {
+      "non_null": 111,
+      "pct": 74.0,
+      "distinct": 5,
+      "examples": [
+        "non isole",
+        "inconnu",
+        "ITE",
+        "isole",
+        "ITI"
+      ]
+    },
+    "type_isolation_plancher_haut": {
+      "non_null": 113,
+      "pct": 75.3,
+      "distinct": 5,
+      "examples": [
+        "non isole",
+        "ITE",
+        "inconnu",
+        "ITI",
+        "isole"
+      ],
+      "value_counts": {
+        "non isole": 60,
+        "inconnu": 17,
+        "None": 37,
+        "ITI": 13,
+        "ITE": 21,
+        "isole": 2
+      }
+    },
+    "type_materiaux_menuiserie": {
+      "non_null": 118,
+      "pct": 78.7,
+      "distinct": 5,
+      "examples": [
+        "bois",
+        "pvc",
+        "métal avec rupture de pont thermique",
+        "métal sans rupture de pont thermique",
+        "métal"
+      ]
+    },
+    "type_plancher_bas_deperditif": {
+      "non_null": 44,
+      "pct": 29.3,
+      "distinct": 11,
+      "examples": [
+        "dalle béton",
+        "plancher avec ou sans remplissage",
+        "voutains en briques ou moellons",
+        "inconnu",
+        "plancher entre solives métalliques avec ou sans remplissage"
+      ]
+    },
+    "type_plancher_haut_deperditif": {
+      "non_null": 57,
+      "pct": 38.0,
+      "distinct": 11,
+      "examples": [
+        "combles aménagés sous rampant",
+        "dalle béton",
+        "plafond avec ou sans remplissage",
+        "inconnu",
+        "plafond entre solives bois avec ou sans remplissage"
+      ]
+    },
+    "type_production_energie_renouvelable": {
+      "non_null": 1,
+      "pct": 0.7,
+      "distinct": 1,
+      "examples": [
+        "solaire photovoltaïque"
+      ]
+    },
+    "type_ventilation": {
+      "non_null": 116,
+      "pct": 77.3,
+      "distinct": 9,
+      "examples": [
+        "Ventilation par ouverture des fenêtres",
+        "Ventilation mécanique auto réglable « après 1982 »",
+        "Ventilation mécanique à extraction hygroréglable",
+        "Système de ventilation par entrées d’air hautes et basses",
+        "Ventilation naturelle par conduit"
+      ]
+    },
+    "type_vitrage": {
+      "non_null": 118,
+      "pct": 78.7,
+      "distinct": 3,
+      "examples": [
+        "double vitrage",
+        "simple vitrage",
+        "triple vitrage"
+      ],
+      "value_counts": {
+        "double vitrage": 101,
+        "None": 32,
+        "simple vitrage": 16,
+        "triple vitrage": 1
+      }
+    },
+    "u_baie_vitree": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 101,
+      "examples": [
+        "1.4",
+        "2.6",
+        "3.0",
+        "2.7",
+        "2.4"
+      ]
+    },
+    "u_mur_exterieur": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 84,
+      "examples": [
+        "2.5",
+        "0.22999999999999998",
+        "0.22999999999999995",
+        "0.45",
+        "0.23"
+      ]
+    },
+    "u_plancher_bas_final_deperditif": {
+      "non_null": 41,
+      "pct": 27.3,
+      "distinct": 35,
+      "examples": [
+        "1.1",
+        "0.8",
+        "1.45",
+        "2.0",
+        "1.4499999999999997"
+      ]
+    },
+    "u_plancher_haut_deperditif": {
+      "non_null": 54,
+      "pct": 36.0,
+      "distinct": 38,
+      "examples": [
+        "0.5",
+        "0.13999999999999999",
+        "2.5",
+        "1.45",
+        "0.3448275862068966"
+      ]
+    },
+    "usage_niveau_1_txt": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 3,
+      "examples": [
+        "Résidentiel collectif",
+        "Tertiaire & Autres",
+        "Résidentiel individuel"
+      ]
+    },
+    "usage_principal_bdnb_open": {
+      "non_null": 148,
+      "pct": 98.7,
+      "distinct": 3,
+      "examples": [
+        "Résidentiel collectif",
+        "Tertiaire",
+        "Résidentiel individuel"
+      ],
+      "value_counts": {
+        "Résidentiel collectif": 116,
+        "Tertiaire": 23,
+        "None": 2,
+        "Résidentiel individuel": 9
+      }
+    },
+    "uw": {
+      "non_null": 115,
+      "pct": 76.7,
+      "distinct": 87,
+      "examples": [
+        "3.0",
+        "1.4",
+        "2.6",
+        "2.8",
+        "2.5"
+      ]
+    },
+    "valeur_fonciere_m2_residentiel_rel_commune": {
+      "non_null": 82,
+      "pct": 54.7,
+      "distinct": 82,
+      "examples": [
+        "1.22576",
+        "0.412698419047619",
+        "0.7517460317460318",
+        "0.00375",
+        "1.0568"
+      ]
+    },
+    "vitrage_vir": {
+      "non_null": 112,
+      "pct": 74.7,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    "zone_plu_bati_patrimonial": {
+      "non_null": 149,
+      "pct": 99.3,
+      "distinct": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    }
+  }
+}

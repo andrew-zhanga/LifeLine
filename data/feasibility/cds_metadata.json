@@ -1,0 +1,231 @@
+{
+  "title": "Fire radiative power and active fire pixels from 2020 to present derived from satellite observations",
+  "description": "This dataset provides global information on the timing and location of Active Fires (AF) burning on Earth's surface during satellite overpasses, and also records their Fire Radiative Power (FRP) as a measure of strength. FRP relates to a fire's combustion rate, and the rate at which smoke containing greenhouse gases, reactive gases and particular matter is released into the atmosphere. The vast majority of detected hotspots are related to landscape fires, however other high temperature targets such as active volcanoes and gas flares are also present in the data. This dataset also provides a dedicated gas flare product to contribute to tracking the changing use and intensity of global industrial gas flaring. The AF & FRP products are primarily for use investigating links between biomass burning, climate change and variability, land-atmosphere interactions, global biogeochemical cycles, atmospheric composition and air quality. \nThe dataset is derived from observations made by the Sea and Land Surface Temperature Radiometer (SLSTR) operating concurrently onboard the European Sentinel-3A and -3B satellites. The AF & FRP products are generated from the non-time critical (NTC) Sentinel-3 SLSTR Level 2 AF detection and FRP product issued by the European Space Agency (ESA). \nThe C3S AF & FRP products include a Level 2 summary product that provides a text-based summary of all Level 2 AF detections and FRP data collected over a one-month period. This information is reported separately for each Sentinel-3 satellite, and further separated by the observing type and time in V1.2, these are: daytime, night-time, and night-time gas flares.\nIn addition, three Level 3 \u2018synthesis products\u2019 for each of the daytime, night-time and gas flare datasets are also provided. The daytime and night-time synthesis products each grids the Level 2 AF and the FRP data at various spatial and temporal resolutions, along with making some adjustments for cloud cover that blocks the fires from the satellite sensors view. The gas flare product is only produced from night-time observations and for hotspots identified as being likely industrial gas flares. The following Level 3 \u2018synthesis products\u2019 are available for V1.2 (January 2020 to present):\n - Daily global Level 3 AF & FRP products are generated on a global 0.1-degree resolution grid. Based on the Level 2 AF & FRP data, the daily global Level 3 AF & FRP products are separated by the observations made by Sentinel-3A or -3B and the night-time and daytime land observations.\n - 27-day global Level 3 AF & FRP products are also derived at 0.1-degree grid cell resolution but summarise the AF & FRP data over 27 days but also separated by the observations made by Sentinel-3A or -3B and the night-time and daytime land observations. This period matches the Sentinel-3 satellites standard orbital repeat cycle.\n - Monthly global Level 3 AF & FRP product provides global AF detection and FRP data at a grid cell size of 0.25 degrees but also separated by the observations made by Sentinel-3A or -3B and the night-time and daytime land observations. This resolution matches the MODIS Climate Modelling Grid active fire product. \nThe AF and FRP and Gas Flare products were produced on behalf of the C3S and the monthly product has been designed to be broadly comparable with NASA's MODIS climate modelling grid active fire product, since they are likely to be used in combination to provide the longest-term AF & FRP time-series.",
+  "id": "satellite-fire-radiative-power",
+  "version": "1.0.0",
+  "jobControlOptions": [
+    "async-execute"
+  ],
+  "outputTransmission": [
+    "reference"
+  ],
+  "links": [
+    {
+      "href": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-fire-radiative-power",
+      "rel": "self"
+    },
+    {
+      "href": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-fire-radiative-power/execution",
+      "rel": "execute",
+      "type": "application/json",
+      "title": "process execution"
+    }
+  ],
+  "inputs": {
+    "variable": {
+      "title": "Variable",
+      "schema": {
+        "enum": [
+          "all"
+        ],
+        "type": "string",
+        "default": "all"
+      }
+    },
+    "product_type": {
+      "title": "Product type",
+      "schema": {
+        "enum": [
+          "gridded",
+          "table_summary"
+        ],
+        "type": "string"
+      }
+    },
+    "time_aggregation": {
+      "title": "Time aggregation",
+      "schema": {
+        "enum": [
+          "day",
+          "month",
+          "27_days"
+        ],
+        "type": "string"
+      }
+    },
+    "horizontal_aggregation": {
+      "title": "Horizontal aggregation",
+      "schema": {
+        "enum": [
+          "0_1_degree_x_0_1_degree",
+          "0_25_degree_x_0_25_degree"
+        ],
+        "type": "string"
+      }
+    },
+    "satellite": {
+      "title": "Satellite",
+      "schema": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "sentinel_3a",
+            "sentinel_3b"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "observation_time": {
+      "title": "Observation time",
+      "schema": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "day",
+            "gas_flares",
+            "night"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "year": {
+      "title": "Year",
+      "schema": {
+        "enum": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "type": "string"
+      }
+    },
+    "month": {
+      "title": "Month",
+      "schema": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "day": {
+      "title": "Day",
+      "schema": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "title": "Version",
+      "schema": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "1_0",
+            "1_2"
+          ],
+          "type": "string"
+        }
+      }
+    }
+  },
+  "outputs": {
+    "asset": {
+      "title": "Asset",
+      "description": "Downloadable asset description",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "title": "FileInfoModel",
+            "required": [
+              "type",
+              "href",
+              "file:checksum",
+              "file:size",
+              "file:local_path"
+            ],
+            "type": "object",
+            "properties": {
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "href": {
+                "title": "Href",
+                "type": "string"
+              },
+              "file:checksum": {
+                "title": "File:Checksum",
+                "type": "string"
+              },
+              "file:size": {
+                "title": "File:Size",
+                "type": "integer"
+              },
+              "file:local_path": {
+                "title": "File:Local Path",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
