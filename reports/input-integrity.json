@@ -1,0 +1,144 @@
+{
+  "source_commit": "3a0039be38fe6f054d828ecf24d44a40696ad033",
+  "raw_hash_checks": [
+    {
+      "path": "data/verified/raw/wb_2024.xlsx",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/henry_hub_2023.csv",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/places.zip",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/eog_2020.xlsx",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/acs_b01001.dat",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/census_tracts.zip",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/acs_variables.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/pipeline_metadata.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/pipelines.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/pipeline_count.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_27.75_-100.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_27.75_-99.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_27.75_-98.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_28.5_-100.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_28.5_-99.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_28.5_-98.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_29.25_-100.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_29.25_-99.json",
+      "matches": true
+    },
+    {
+      "path": "data/verified/raw/weather_29.25_-98.json",
+      "matches": true
+    }
+  ],
+  "prepared_hashes": [
+    {
+      "path": "data/verified/processed/communities.geojson",
+      "sha256": "f40444d47178f0ba0c000fd4b816cbc4d5d9fab0d1932e0607b3f81679328da3",
+      "bytes": 54328
+    },
+    {
+      "path": "data/verified/processed/flares_global_2023.geojson",
+      "sha256": "96bbfa6c49306c461f68ffefb12eab922182c7b8c37543030cde58782dea33f0",
+      "bytes": 3628800
+    },
+    {
+      "path": "data/verified/processed/flares_regional_2023.geojson",
+      "sha256": "ab9e4b61c141c0fa45e0ef47d911b746bb88f14e4384c7702a0bad4a1ce00839",
+      "bytes": 186038
+    },
+    {
+      "path": "data/verified/processed/gas_price_2023.json",
+      "sha256": "2ae44965edff8667754d01fef795824d568dcb2be8132db9d4c21770f0dfc3d6",
+      "bytes": 10813
+    },
+    {
+      "path": "data/verified/processed/integration_smoke_test.json",
+      "sha256": "b9792dfb0ec6be89fd06195c7f8d76fd4ab6243a4616a4a381baa19e47d6a372",
+      "bytes": 36240
+    },
+    {
+      "path": "data/verified/processed/pipelines.geojson",
+      "sha256": "c0bab512a85ca88be458bcaa1653f40c5a7f1e6974820d8a3204163663acd7dc",
+      "bytes": 567456
+    },
+    {
+      "path": "data/verified/processed/population_grid.geojson",
+      "sha256": "53fa441ed10f74d87e859c5e22be7180d5fab99333a3f3b8ea140792c06c002d",
+      "bytes": 4793434
+    },
+    {
+      "path": "data/verified/processed/population_receptors.geojson",
+      "sha256": "925c9877d8250d7edf6beff6cb076efced32d205861a81a9c66c52f96634b68c",
+      "bytes": 2419323
+    },
+    {
+      "path": "data/verified/processed/population_tract_points.geojson",
+      "sha256": "7d8df4dd129eaacaf03c613496aa256ba1438c18fe82afde0fcaacb954a463f6",
+      "bytes": 350283
+    },
+    {
+      "path": "data/verified/processed/population_tracts.geojson",
+      "sha256": "30232aab379ad1566455a9c8e15241753da3ba17932967ae10ee99c5dea908c0",
+      "bytes": 1316978
+    },
+    {
+      "path": "data/verified/processed/validation_report.json",
+      "sha256": "fdb823cd4faf063164181401bea0a396ba0b9491649bf800fd8a4b884d0a9994",
+      "bytes": 4735
+    },
+    {
+      "path": "data/verified/processed/weather_2023.json",
+      "sha256": "2f4bbf5370fd4baa31cb42e9a019a21cb5eeb12ea98f38e5e1305898d8a14646",
+      "bytes": 2863986
+    }
+  ],
+  "note": "Prepared hash baseline recorded at build start; raw downloads checked against existing manifest."
+}

@@ -1,54 +1,24 @@
 # FlareWise execution status
 
-## Current state
+Active branch: `codex/flarewise-full-build`; base `3a0039b`. Unrelated untracked user documents preserved.
 
-- Execution brief prepared. The full implementation run has **not started**.
-- Existing demo and verified data bundle were pushed to main at `78ef33a`.
-- Current frontend still uses dummy values. The prepared real-data bundle is separate.
-- Two read-only planning reviewers assessed frontend and model coordination; their recommendations are incorporated into `EXECUTION_PLAN.md`. They did not implement features.
-- No active file-ownership claims from implementation workers yet.
+## Ownership
+- Coordinator: contracts, config/dependencies, assembly, public data, integration, presentation, reports, docs, Git.
+- Worker A: scripts/model, data/build/exposure, tests/model.
+- Worker B: scripts/portfolio, data/build/portfolios, tests/portfolio.
+- Worker C: demo/src, demo/public/ui, tests/ui.
+Workers do not change Git state or edit outside assigned paths.
 
-## Start here
+## Gates
+G0 in progress: data inspected, integration branch created, contracts/app-v1.md and parameters.json frozen. Baseline production build running.
+G1–G4 pending. Core uses historical deterministic screening; no trained model or health claims.
 
-1. Read `BUILD_PROMPT.md`, `EXECUTION_PLAN.md` and `PITCH_BRIEF.md`.
-2. Inspect actual Git status/remote; do not assume this status file's recorded base is the latest commit.
-3. Create/reuse `codex/flarewise-full-build`, freeze the shared schema and dispatch three workers as specified.
-4. Use the verified processed files; do not rerun bulk downloads unnecessarily.
+## Resume
+Read contracts/app-v1.md, docs/EXECUTION_PLAN.md and this status. Use `.data-venv/bin/python` for preprocessing. Run `cd demo && npm run dev -- --port 5173` for preview; `npm run build` for production verification. Coordinator alone stages explicit completed paths, commits and pushes. Do not stage unrelated untracked files.
 
-## Gate tracker
-
-| Gate | Status |
-|---|---|
-| Verified source-data acquisition | Complete |
-| Dummy UI prototype | Complete |
-| G0 final runtime contract and worker dispatch | Not started |
-| G1 real vertical slice | Not started |
-| G2 complete decision flow | Not started |
-| G3 full product integration | Not started |
-| G4 presentation assets and browser rehearsal | Not started |
-| G5 optional extensions | Not started; not required |
-
-## Known boundaries
-
-- Data is historical, not live; World Bank inventory is VIIRS-derived.
-- Population within tracts is allocated by area; fine-grained resident locations are not observed.
-- Costs, capture efficiency and gas composition are screening assumptions.
-- No imagery/labels for segmentation and no independent pollutant-validation dataset are in the bundle.
-- The initial 17.41% integration result is a smoke-test fixture, not the final portfolio claim.
-- Basemap/font requests still depend on network; final run needs a basic fallback and presentation backup.
-
-## Working commands
-
-```sh
-cd demo
-npm ci
-npm run dev -- --port 5173
-# Production check:
-npm run build
-```
-
-The existing local preview may already occupy port 5173. Inspect before starting a conflicting process; use the existing session or a free port deliberately.
-
-## Update during execution
-
-Append only concise milestone entries: date/time, commit/branch, owner/path assignments, completed outputs, checks, current blockers, next action and exact restart command. Record a known-good commit before optional experiments. Do not fill this file with full agent transcripts.
+## Checkpoint G0
+- Baseline production build passed in 11.31 s; existing large-chunk warning retained.
+- 19/19 source hashes verified; prepared hash baseline in reports/input-integrity.json.
+- All three workers acknowledged frozen contract. Dependencies installed and pinned.
+- Baseline 1440×900 screenshot saved; current local preview http://localhost:5173.
+- Coordinator assembly implementation in progress; do not treat as verified until actual outputs arrive.

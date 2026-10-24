@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "model_version": "screening-v1",
+  "development_only": true,
+  "site": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -97.668294,
+        29.028111
+      ]
+    },
+    "properties": {
+      "id": "wb-2023-row-142315",
+      "country": "United States",
+      "year": 2023,
+      "annual_flared_bcm": 0.00023681399999999999,
+      "raw_workbook_bcm": 0.000236814,
+      "annual_flared_m3": 236814.0,
+      "source_type": "OIL",
+      "field_name": "NA",
+      "operator": "1776 ENERGY OPERATORS",
+      "location": "ONSHORE",
+      "volume_basis": "satellite estimate",
+      "source_workbook_row": 142315,
+      "eligible_for_capture": true
+    }
+  },
+  "cell": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -97.77186543261668,
+            28.672785168229428
+          ],
+          [
+            -97.77191918216548,
+            28.668176228856602
+          ],
+          [
+            -97.772004,
+            28.668324000000005
+          ],
+          [
+            -97.773377,
+            28.667851000000006
+          ],
+          [
+            -97.773875,
+            28.669018
+          ],
+          [
+            -97.778336,
+            28.667648999999997
+          ],
+          [
+            -97.77853,
+            28.668027000000002
+          ],
+          [
+            -97.77186543261668,
+            28.672785168229428
+          ]
+        ]
+      ]
+    },
+    "properties": {
+      "id": "48175960200-0",
+      "geoid": "48175960200",
+      "population": 0.2655531474129,
+      "under5": 0.01320966644043687,
+      "age65plus": 0.07265316542240277,
+      "allocation": "uniform tract area; modeled, not measured cell population"
+    }
+  },
+  "weather": {
+    "id": "weather_27.75_-100",
+    "longitude": -100.0,
+    "latitude": 27.75,
+    "units": {
+      "time": "iso8601",
+      "wind_speed_10m": "m/s",
+      "wind_direction_10m": "\u00b0",
+      "wind_speed_100m": "m/s",
+      "wind_direction_100m": "\u00b0"
+    }
+  },
+  "hour": {
+    "time": "2023-01-01T00:00",
+    "wind_speed_10m": 2.8,
+    "wind_direction_10m": 145,
+    "wind_speed_100m": 6.49,
+    "wind_direction_100m": 151
+  },
+  "economics": null,
+  "exposure": null,
+  "missing_reason": "Computed outputs pending; no dummy values permitted."
+}
