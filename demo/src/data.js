@@ -1,7 +1,8 @@
 export async function json(url) {
   const response = await fetch(url);
-  if (!response.ok) throw new Error(`Could not load ${url} (${response.status})`);
-  return response.json();
+  const unavailable = 'Scenario data is unavailable. Check the local server and try again.';
+  if (!response.ok || !(/application\/(?:[a-z0-9.+-]+\+)?json\b/i.test(response.headers.get('content-type') || ''))) throw new Error(unavailable);
+  try { return await response.json(); } catch { throw new Error(unavailable); }
 }
 export async function loadApp() {
   const manifest = await json('/data/manifest.json');

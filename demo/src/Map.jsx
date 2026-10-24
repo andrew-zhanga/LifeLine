@@ -5,7 +5,7 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 maplibregl.setWorkerUrl(workerUrl);
 const fc=features=>({type:'FeatureCollection',features});
 const empty=fc([]);
-export default function Map({data,region,values,surface,layers,chosen,selected,hour,mapRef,onSelect,onError}) {
+export default function Map({data,region,mode,values,surface,layers,chosen,selected,hour,mapRef,onSelect,onError}) {
  const el=useRef(),[ready,setReady]=useState(false);
  useEffect(()=>{
  const m=new maplibregl.Map({container:el.current,style:{version:8,sources:{basemap:{type:'raster',tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,attribution:'© OpenStreetMap contributors',maxzoom:19}},layers:[{id:'ocean',type:'background',paint:{'background-color':'#102832'}},{id:'base',type:'raster',source:'basemap',paint:{'raster-saturation':-1,'raster-brightness-max':.28}}]},center:[-45,23],zoom:1.5,maxZoom:12,attributionControl:{compact:true}});
@@ -40,7 +40,7 @@ export default function Map({data,region,values,surface,layers,chosen,selected,h
  const wind=[];if(hour!==null)for(const loc of data.weather.locations){const a=loc.direction_from_deg[hour]*Math.PI/180,s=loc.speed_mps[hour];if(!Number.isFinite(a)||!Number.isFinite(s)||s<.5)continue;const dx=-Math.sin(a)*.14,dy=-Math.cos(a)*.14,x=loc.longitude,y=loc.latitude,tip=[x+dx,y+dy];wind.push({type:'Feature',properties:{},geometry:{type:'MultiLineString',coordinates:[[[x,y],tip],[ [tip[0]-dx*.28-dy*.2,tip[1]-dy*.28+dx*.2],tip,[tip[0]-dx*.28+dy*.2,tip[1]-dy*.28-dx*.2]]]}})}m.getSource('wind').setData(fc(wind));
  m.setFilter('tract-selected',['==',['get','geoid'],selected?.type==='tract'?selected.id:'']);
  const vis=(ids,v)=>ids.forEach(id=>m.setLayoutProperty(id,'visibility',v?'visible':'none'));
- vis(['base'],layers.Basemap);vis(['global-glow','global-dots'],!region);vis(['tract-fill','tract-line','tract-selected','boundary-line','cells-fill'],region);vis(['sites-dots'],region&&layers.Sources);vis(['community-dots'],region&&layers.Communities);vis(['pipes-line'],region&&layers.Pipelines);vis(['wind-lines'],region&&layers.Wind&&hour!==null);
- },[ready,data,region,values,surface,layers,chosen,selected,hour]);
+ vis(['base'],layers.Basemap);vis(['global-glow','global-dots'],!region);vis(['tract-fill','tract-line','tract-selected','boundary-line'],region);vis(['cells-fill'],region&&mode!=='Explore');vis(['sites-dots'],region&&layers.Sources);vis(['community-dots'],region&&layers.Communities);vis(['pipes-line'],region&&layers.Pipelines);vis(['wind-lines'],region&&layers.Wind&&hour!==null);
+ },[ready,data,region,mode,values,surface,layers,chosen,selected,hour]);
  return <div ref={el} className="map"/>;
 }
