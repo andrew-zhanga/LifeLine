@@ -1,0 +1,47 @@
+{
+  "analysis_year": 2023,
+  "region": "Eagle Ford / South Texas study bounding box; not a geological basin boundary",
+  "bbox": [
+    -100.2,
+    27.5,
+    -97.5,
+    29.5
+  ],
+  "source_and_receptor_buffer_bbox": [
+    -100.5,
+    27.25,
+    -97.25,
+    29.75
+  ],
+  "primary_flare_file": "raw/wb_2024.xlsx",
+  "primary_flare_year": 2023,
+  "population_reference_period": "2019\u20132023 ACS five-year estimates",
+  "live_data": false,
+  "credentials_required_for_downloaded_bundle": false,
+  "source_strength_assumption": "Annual estimated gas volume spread uniformly over the year unless an explicit alternative is configured; hourly operation is not observed.",
+  "model_parameters_still_to_choose": [
+    "capture_fraction",
+    "capex_model",
+    "annual_opex_model",
+    "gas_netback_discount_and_treatment_cost",
+    "gas_heating_value_mmbtu_per_m3",
+    "project_life_years",
+    "discount_rate",
+    "dispersion_width_and_decay",
+    "calm_wind_handling"
+  ],
+  "unavailable_measured_inputs": [
+    "site-specific capture equipment quotations",
+    "gas composition and emissions factors",
+    "actual hourly flare operations",
+    "pipeline capacity and permission to connect"
+  ],
+  "alternatives": {
+    "eog_2020": "Downloaded fallback; not primary",
+    "sentinel3_cds": "Not downloaded; authenticated access not established; not a dependency of this bundle",
+    "rrc_lease_volume_join": "Not established; not needed for satellite-volume scenario"
+  },
+  "source_warning": "World Bank annual data is VIIRS-derived. This replaces the difficult raw feed, not the sensor.",
+  "external_runtime_dependencies": "Analytical fixtures can run locally. Current demo still fetches basemap tiles/fonts; offline analytical data does not make the whole website offline.",
+  "population_allocation_default": "5 km cells weighted by intersected tract area, conserving each tract total; modeled uniform distribution"
+}

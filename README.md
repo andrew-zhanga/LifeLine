@@ -36,3 +36,9 @@ All site locations, financial values, population figures, and exposure results a
 ![Demo preview](demo/screenshots/demo-desktop.png)
 
 See [demo documentation](demo/README.md) for more details.
+
+## Verified data for the next build
+
+The [data bundle](data/verified/README.md) contains prepared 2023 flare, weather, population, pipeline, and gas-price inputs, with source manifests and validation results. The running frontend still uses its original dummy data; integration is the next implementation step.
+
+See the [build contract](data/verified/build_contract.json) for assumptions and scope. Retrieval and preparation scripts are in `scripts/`; large raw downloads and the local Python environment are excluded from Git.

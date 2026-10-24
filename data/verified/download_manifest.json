@@ -1,0 +1,154 @@
+[
+  {
+    "file": "raw/wb_2024.xlsx",
+    "url": "https://thedocs.worldbank.org/en/doc/bd2432bbb0e514986f382f61b14b2608-0400072025/related/2012-2024-Flare-Volume-Estimates-by-individual-Flare-Location.xlsx",
+    "bytes": 14007712,
+    "sha256": "c1a04df74c26b5d3780407e1621f7da879d2e1d71ca16959e20b80dc516ce1de",
+    "verified_at_utc": "2026-10-24T05:53:07.012147+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/henry_hub_2023.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP&cosd=2023-01-01&coed=2023-12-31",
+    "bytes": 4129,
+    "sha256": "bf146e6dd9d6e151b3462a3d59312384774735f145f904cae2571f0f057601e5",
+    "verified_at_utc": "2026-10-24T05:53:07.629772+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/places.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_48_place_500k.zip",
+    "bytes": 1707999,
+    "sha256": "1a788d0885236db4afa62d948aab543a6a524dde94d1f0361edd0c2ced3621b4",
+    "verified_at_utc": "2026-10-24T05:53:06.979921+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/eog_2020.xlsx",
+    "url": "https://eogdata.mines.edu/global_flare_data/VIIRS_Global_flaring_d.7_slope_0.029353_2020_web_v1.xlsx",
+    "bytes": 1180535,
+    "sha256": "efd3992892bed975b8563f224214c49858d40e577645c40cd47d2e402a0c9ca6",
+    "verified_at_utc": "2026-10-24T05:53:06.985727+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/acs_b01001.dat",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01001.dat",
+    "bytes": 200088223,
+    "sha256": "dc68a9b588cea042c73dfb4e5cd5e896a6f6c404a3e75be70a99dc514ed7bc35",
+    "verified_at_utc": "2026-10-24T05:53:07.513327+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/census_tracts.zip",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_48_tract_500k.zip",
+    "bytes": 4474953,
+    "sha256": "96e3b88dfc8bf57aa8f1fedd2b95c65dfdb9fc96a199722a28948c2da97db061",
+    "verified_at_utc": "2026-10-24T05:53:07.029012+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/acs_variables.json",
+    "url": "https://api.census.gov/data/2023/acs/acs5/groups/B01001.json",
+    "bytes": 250938,
+    "sha256": "361dab49e9df46d0bf6a80f46cdb4e7c1185b8ff475cef1968616ec630c027a9",
+    "verified_at_utc": "2026-10-24T05:53:07.030705+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/pipeline_metadata.json",
+    "url": "https://arcgis.netl.doe.gov/server/rest/services/Hosted/EIA_pipeline_data/FeatureServer/3?f=pjson",
+    "bytes": 11261,
+    "sha256": "9e14f0fb8f342a7f3fca813862e97dea4fa65187b6dfd7ebbe3f97360af7a048",
+    "verified_at_utc": "2026-10-24T05:53:07.031434+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/pipelines.json",
+    "url": "https://arcgis.netl.doe.gov/server/rest/services/Hosted/EIA_pipeline_data/FeatureServer/3/query?where=1%3D1&geometry=-100.5%2C27.25%2C-97.25%2C29.75&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=geojson&resultRecordCount=2000",
+    "bytes": 610036,
+    "sha256": "22a0c597b56ad57ef09a62d6a328398ebe31a56852daa30cb8857bfccd0b67ec",
+    "verified_at_utc": "2026-10-24T05:53:07.034053+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/pipeline_count.json",
+    "url": "https://arcgis.netl.doe.gov/server/rest/services/Hosted/EIA_pipeline_data/FeatureServer/3/query?where=1%3D1&geometry=-100.5%2C27.25%2C-97.25%2C29.75&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=json&resultRecordCount=2000&returnCountOnly=true",
+    "bytes": 14,
+    "sha256": "06c7063ab1666849a230fdb3224e5886623c18e1dcbc8d802706b7672dc604ca",
+    "verified_at_utc": "2026-10-24T05:53:07.034896+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_27.75_-100.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.75&longitude=-100&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 321941,
+    "sha256": "a5e426890322758bea563afa29f276fcda68bd09d08fb26f33a06500edb52c63",
+    "verified_at_utc": "2026-10-24T05:53:07.042187+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_27.75_-99.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.75&longitude=-99&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 321590,
+    "sha256": "53a8c8206bf662e310b35405866519b342bf9ad08312f5b14491be0ab9bfd81d",
+    "verified_at_utc": "2026-10-24T05:53:07.047841+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_27.75_-98.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=27.75&longitude=-98&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 320642,
+    "sha256": "ef821644ae798587b951b1c9b34d8dbc17100305b216022b8a3908b8b7e849b7",
+    "verified_at_utc": "2026-10-24T05:53:07.051478+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_28.5_-100.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.5&longitude=-100&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 321711,
+    "sha256": "88a756b646e647ba5734d931a7330018a6d32d4f2a169b7c60b3ee953ada8858",
+    "verified_at_utc": "2026-10-24T05:53:07.060679+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_28.5_-99.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.5&longitude=-99&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 320390,
+    "sha256": "b0ed55f97490b48cc845176d804d4a8a83e89bda55fca22a596f0c4732be4d17",
+    "verified_at_utc": "2026-10-24T05:53:07.062660+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_28.5_-98.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.5&longitude=-98&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 320544,
+    "sha256": "19234a73c7a1dbb810da1b7587ab82efafc94f7056ec6149deea7188142f512d",
+    "verified_at_utc": "2026-10-24T05:53:07.064516+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_29.25_-100.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.25&longitude=-100&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 320934,
+    "sha256": "da93d2a40565a19906d48d7dba133702e497102d89b2bba8cbcfb4bfb5185307",
+    "verified_at_utc": "2026-10-24T05:53:07.067160+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_29.25_-99.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.25&longitude=-99&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 319955,
+    "sha256": "56bf0ba85e5ce801ec89baf14bffbc69f46fc318e76ab3a3b8639e54746e49cc",
+    "verified_at_utc": "2026-10-24T05:53:07.075202+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "raw/weather_29.25_-98.json",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.25&longitude=-98&start_date=2023-01-01&end_date=2023-12-31&hourly=wind_speed_10m%2Cwind_direction_10m%2Cwind_speed_100m%2Cwind_direction_100m&models=era5&wind_speed_unit=ms&timezone=GMT",
+    "bytes": 319746,
+    "sha256": "978d219e1b4fd553dd9760e5e387f5f27948801a7aa07fdea544ee75810ef287",
+    "verified_at_utc": "2026-10-24T05:53:07.078522+00:00",
+    "status": "downloaded"
+  }
+]

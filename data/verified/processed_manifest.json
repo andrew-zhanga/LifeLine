@@ -1,0 +1,62 @@
+[
+  {
+    "file": "processed/communities.geojson",
+    "bytes": 54328,
+    "sha256": "f40444d47178f0ba0c000fd4b816cbc4d5d9fab0d1932e0607b3f81679328da3"
+  },
+  {
+    "file": "processed/flares_global_2023.geojson",
+    "bytes": 3628800,
+    "sha256": "96bbfa6c49306c461f68ffefb12eab922182c7b8c37543030cde58782dea33f0"
+  },
+  {
+    "file": "processed/flares_regional_2023.geojson",
+    "bytes": 186038,
+    "sha256": "ab9e4b61c141c0fa45e0ef47d911b746bb88f14e4384c7702a0bad4a1ce00839"
+  },
+  {
+    "file": "processed/gas_price_2023.json",
+    "bytes": 10813,
+    "sha256": "2ae44965edff8667754d01fef795824d568dcb2be8132db9d4c21770f0dfc3d6"
+  },
+  {
+    "file": "processed/integration_smoke_test.json",
+    "bytes": 36240,
+    "sha256": "b9792dfb0ec6be89fd06195c7f8d76fd4ab6243a4616a4a381baa19e47d6a372"
+  },
+  {
+    "file": "processed/pipelines.geojson",
+    "bytes": 567456,
+    "sha256": "c0bab512a85ca88be458bcaa1653f40c5a7f1e6974820d8a3204163663acd7dc"
+  },
+  {
+    "file": "processed/population_grid.geojson",
+    "bytes": 4793434,
+    "sha256": "53fa441ed10f74d87e859c5e22be7180d5fab99333a3f3b8ea140792c06c002d"
+  },
+  {
+    "file": "processed/population_receptors.geojson",
+    "bytes": 2419323,
+    "sha256": "925c9877d8250d7edf6beff6cb076efced32d205861a81a9c66c52f96634b68c"
+  },
+  {
+    "file": "processed/population_tract_points.geojson",
+    "bytes": 350283,
+    "sha256": "7d8df4dd129eaacaf03c613496aa256ba1438c18fe82afde0fcaacb954a463f6"
+  },
+  {
+    "file": "processed/population_tracts.geojson",
+    "bytes": 1316978,
+    "sha256": "30232aab379ad1566455a9c8e15241753da3ba17932967ae10ee99c5dea908c0"
+  },
+  {
+    "file": "processed/validation_report.json",
+    "bytes": 4735,
+    "sha256": "fdb823cd4faf063164181401bea0a396ba0b9491649bf800fd8a4b884d0a9994"
+  },
+  {
+    "file": "processed/weather_2023.json",
+    "bytes": 2863986,
+    "sha256": "2f4bbf5370fd4baa31cb42e9a019a21cb5eeb12ea98f38e5e1305898d8a14646"
+  }
+]
