@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0", "model_version": "screening-v1",
+  "capture_fraction": 0.9, "sellable_fraction": 0.95,
+  "heating_value_mmbtu_per_mcf": 1.1, "ft3_per_m3": 35.3146667,
+  "life_years": 7, "discount_rate": 0.1,
+  "capex_base_usd": 250000, "capex_per_pipeline_km_usd": 350000,
+  "capex_capacity_usd": 125000, "capex_capacity_reference_mcf_day": 100,
+  "capex_capacity_exponent": 0.6, "annual_fixed_opex_fraction": 0.03,
+  "variable_opex_usd_per_mmbtu": 0.5,
+  "budgets_usd": [2000000,5000000,10000000],
+  "cutoff_km": 30, "wind_height_m": 100, "calm_threshold_mps": 0.5,
+  "kernel_width_base_km": 1, "kernel_width_slope": 0.15, "kernel_decay_km": 15,
+  "balanced_npv_retention": 0.95, "solver_time_limit_seconds": 5,
+  "assumption_version": "screening-2023-v1"
+}

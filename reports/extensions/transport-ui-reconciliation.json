@@ -1,0 +1,12 @@
+{
+  "timestamp": "2023-12-10T23:00:00Z",
+  "baseline_weighted_proxy": 0.0004108080857921345,
+  "capture_weighted_proxy": 0.0001262272089907993,
+  "reduction_pct": 69.27343609914503,
+  "browser_display_observed": {
+    "baseline": "4.11e-4",
+    "capture": "1.26e-4",
+    "reduction": "69.3%"
+  },
+  "scope": "17 sampled cell receptors,8source bounded experiment; not annual exposure model"
+}

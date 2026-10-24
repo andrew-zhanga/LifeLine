@@ -1,0 +1,8 @@
+{
+  "batch_size": 24,
+  "steps": 12,
+  "seconds": 2.754707333864644,
+  "device": "Apple MPS",
+  "parameters": 119569,
+  "purpose": "synthetic throughput benchmark only; not training/evaluation result"
+}

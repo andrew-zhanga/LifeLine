@@ -1,0 +1,14 @@
+slide,claim,value,unit,source_result_path,scenario,commit,limitation
+2,Global positive-volume inventory,8783,sites,data/verified/processed/validation_report.json,2023,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Published satellite estimates
+3,Complete weather hours per location,8760,hours,data/build/exposure/exposure-manifest.json,2023,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Coarse ERA5 reanalysis
+4,Financial NPV,33644071.29933704,USD,data/build/portfolios/scenarios.json,budget-10m-benchmark,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Screening assumptions; not investment advice
+5,Balanced NPV retained,95.5125241354675,percent,presentation/metrics.json,budget-10m-benchmark,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Relative to Financial reference under same assumptions
+5,Balanced exposure reduction,10.610729273080835,percent,data/build/portfolios/scenarios.json,budget-10m-benchmark,51e086bebe8e5463eb8e2ca60437c27e00af3dca,"Relative index, not health outcome"
+5,Balanced exposure gain over Financial,5.3628779488041705,percentage points,presentation/metrics.json,budget-10m-benchmark,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Same annual denominator including buffer
+6,Data join completeness,763,of 763 tracts,data/verified/processed/validation_report.json,2019–2023 ACS,51e086bebe8e5463eb8e2ca60437c27e00af3dca,"Data quality, not predictive accuracy"
+1,Decision: allocate limited capture budget,Gas value and modeled exposure,product scope,docs/PITCH_BRIEF.md,all,51e086bebe8e5463eb8e2ca60437c27e00af3dca,"Screening, not engineering certification"
+2,Capture candidates,392,sites,data/verified/processed/validation_report.json,South Texas bbox,51e086bebe8e5463eb8e2ca60437c27e00af3dca,"Study box, not official basin boundary"
+2,Uncapturable background sources,30,sites,data/build/exposure/exposure-manifest.json,all,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Background retained in denominator
+3,Wind rose sample count,78840,location-hours,data/verified/processed/weather_2023.json,2023,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Nine coarse ERA5 locations
+6,Sensitivity cases,8,scenarios,data/build/portfolios/sensitivity.json,budget-5m-benchmark,51e086bebe8e5463eb8e2ca60437c27e00af3dca,"Declared ranges, not confidence intervals"
+7,Next step: operator pilot,Engineering inputs and independent observations,proposed future work,presentation/qa.md,future,51e086bebe8e5463eb8e2ca60437c27e00af3dca,Not completed or validated by this build

@@ -1,0 +1,16 @@
+{
+  "fingerprint": "85025f2d511df887c22cfbc9a0b760abbda57d237a76ed8735b2e7a2fcb96b42",
+  "matched_labels": 1437,
+  "invalid_polygons_skipped": [
+    {
+      "id": "1298_2019-10-25T09:56:33.931Z_19",
+      "vertices": 1
+    }
+  ],
+  "shape_counts": {
+    "(13, 120, 120)": 2312,
+    "(13, 120, 119)": 2
+  },
+  "coordinate_frame": "WGS84 bounds",
+  "mask_rasterizer": "PIL polygon; percentage coordinates times1.2"
+}

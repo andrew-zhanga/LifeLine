@@ -1,0 +1,21 @@
+
+> flarewise-demo@0.1.0 build
+> vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 1587 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 0.42 kB │ gzip:   0.30 kB
+dist/assets/maplibre-gl-worker-DJoMIXcx.js    519.57 kB
+dist/assets/Workbench-DC0HeyNW.css             22.93 kB │ gzip:   5.49 kB
+dist/assets/index-BlBDKGCc.css                 92.94 kB │ gzip:  15.60 kB
+dist/assets/Workbench-DggalB5H.js             549.48 kB │ gzip: 140.11 kB
+dist/assets/index-DBHVoapL.js               1,321.21 kB │ gzip: 371.78 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.10s

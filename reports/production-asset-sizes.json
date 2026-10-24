@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "path": "demo/dist/assets/index-CvnsD6Ac.css",
+      "gzip_bytes": 15256
+    },
+    {
+      "path": "demo/dist/assets/index-BVa434W5.js",
+      "gzip_bytes": 369460
+    },
+    {
+      "path": "demo/dist/assets/maplibre-gl-worker-DJoMIXcx.js",
+      "gzip_bytes": 150419
+    }
+  ],
+  "total_gzip_bytes": 535135
+}

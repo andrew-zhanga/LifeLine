@@ -1,0 +1,11 @@
+{
+  "all_passed": true,
+  "checks": [
+    "location groups disjoint across splits",
+    "checkpoint hash matches published result",
+    "foreground metrics reconcile confusion counts",
+    "checkpoint epoch chosen by validation",
+    "split counts reconcile manifest"
+  ],
+  "test_images": 374
+}

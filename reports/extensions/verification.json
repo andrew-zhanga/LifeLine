@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-24",
+  "all_passed": true,
+  "python_tests": {
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  },
+  "node_tests": {
+    "passed": 8,
+    "failed": 0,
+    "log": "ui-tests.log"
+  },
+  "production_build": "production-build.log",
+  "http_artifacts_hash_verified": [
+    "/data/extensions/transport/scene.json",
+    "/data/extensions/transport/diagnostics.json",
+    "/data/extensions/community/community.json",
+    "/data/extensions/community/robustness.json",
+    "/data/extensions/community/global-inventory.json",
+    "/data/extensions/experiments/examples/example-0.png",
+    "/data/extensions/experiments/examples/example-1.png",
+    "/data/extensions/experiments/examples/example-2.png",
+    "/data/extensions/experiments/results.json"
+  ],
+  "original_plan_and_browser_data_preserved": true,
+  "browser_checks": [
+    "pre-installation capture leaves proxy unchanged",
+    "post-installation proxy reconciles exported values",
+    "financial/balanced/community selection changes",
+    "actual demographic priorities and tract attribution",
+    "fixed-plan stress and robust equivalence disclosure",
+    "Nigeria inventory navigation and South Texas return",
+    "missing transport asset reports error and Retry recovers",
+    "all three satellite examples loaded with actual evaluation metrics",
+    "final browser console error list empty"
+  ],
+  "performance": {
+    "viewport": [
+      1366,
+      768
+    ],
+    "frames": 180,
+    "seconds": 3,
+    "median_ms": 16.7,
+    "p95_ms": 17.6,
+    "over33ms_pct": 0,
+    "visible_puffs": 1241,
+    "draw_calls": 39,
+    "scope": "short local production-browser sample, not cross-device guarantee"
+  },
+  "limitations": [
+    "Transport is schematic and uncalibrated; not pollutant concentration or health prediction",
+    "Global inventory does not imply global investment/exposure modeling",
+    "Satellite model is European industrial smoke research, not validated Texas flare detection",
+    "No embedded Street View; external satellite map link",
+    "Vite reports nonfatal large chunk warnings; no public deployment configured"
+  ]
+}

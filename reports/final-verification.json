@@ -1,0 +1,211 @@
+{
+  "implementation_commit": "51e086bebe8e5463eb8e2ca60437c27e00af3dca",
+  "production_build": "pass",
+  "tests": {
+    "model": 8,
+    "portfolio": 6,
+    "ui": 4,
+    "total": 18,
+    "all_pass": true
+  },
+  "assembly_plans": 25,
+  "prepared_inputs_unchanged": true,
+  "http_assets": [
+    {
+      "path": "/data/global.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/sites.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/cells.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/tracts.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/communities.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/pipelines.geojson",
+      "status": 200,
+      "content_type": "application/geo+json"
+    },
+    {
+      "path": "/data/baseline.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/economics.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/weather.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/scenarios.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/manifest.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-financial.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-balanced.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-exposure.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-frontier-1.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-frontier-2.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-frontier-3.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-frontier-4.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-2m-benchmark-frontier-5.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-financial.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-balanced.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-exposure.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-frontier-1.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-frontier-3.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-frontier-4.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-frontier-5.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-5m-benchmark-frontier-6.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-financial.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-balanced.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-exposure.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-1.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-2.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-3.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-4.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-5.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/data/plans/budget-10m-benchmark-frontier-6.json",
+      "status": 200,
+      "content_type": "application/json"
+    }
+  ],
+  "browser_sizes": [
+    [
+      1440,
+      900
+    ],
+    [
+      1366,
+      768
+    ]
+  ],
+  "normal_path_console_errors": 0,
+  "unresolved": [
+    "MapLibre bundle exceeds Vite 500KB chunk advisory",
+    "Actual disconnected cold boot is not verified; local geography and missing-plan recovery verified",
+    "No public deployment or independent pollutant/health validation"
+  ]
+}

@@ -1,0 +1,38 @@
+test_actual_hour_axis (test_exposure.ArtifactTests.test_actual_hour_axis) ... ok
+test_data_validations_pass (test_exposure.ArtifactTests.test_data_validations_pass) ... ok
+test_sparse_sums_and_fixed_capture (test_exposure.ArtifactTests.test_sparse_sums_and_fixed_capture) ... ok
+test_calm_finite_isotropic_and_cutoff (test_exposure.KernelTests.test_calm_finite_isotropic_and_cutoff) ... ok
+test_cardinal_from_directions (test_exposure.KernelTests.test_cardinal_from_directions) ... ok
+test_crosswind_at_source_is_zero (test_exposure.KernelTests.test_crosswind_at_source_is_zero) ... ok
+test_hand_calculated_centerline (test_exposure.KernelTests.test_hand_calculated_centerline) ... ok
+test_source_linearity (test_exposure.KernelTests.test_source_linearity) ... ok
+test_buffer_excluded_and_balanced_disabled (test_portfolio.PortfolioTests.test_buffer_excluded_and_balanced_disabled) ... ok
+test_decline_lowers_npv_without_changing_initial_capex (test_portfolio.PortfolioTests.test_decline_lowers_npv_without_changing_initial_capex) ... ok
+test_hand_calculation_and_no_capex_double_count (test_portfolio.PortfolioTests.test_hand_calculation_and_no_capex_double_count) ... ok
+test_milp_matches_exhaustive_selection (test_portfolio.PortfolioTests.test_milp_matches_exhaustive_selection) ... ok
+test_negative_financial_can_select_empty (test_portfolio.PortfolioTests.test_negative_financial_can_select_empty) ... ok
+test_nonpositive_margin_has_null_payback (test_portfolio.PortfolioTests.test_nonpositive_margin_has_null_payback) ... ok
+test_capture_preserves_old_mass_and_paths (test_transport.TransportTests.test_capture_preserves_old_mass_and_paths) ... ok
+test_deterministic_and_timestep_converges (test_transport.TransportTests.test_deterministic_and_timestep_converges) ... ok
+test_emitted_remaining_exited_and_captured_mass (test_transport.TransportTests.test_emitted_remaining_exited_and_captured_mass) ... ok
+test_from_direction_cardinals (test_transport.TransportTests.test_from_direction_cardinals) ... ok
+test_gaussian_normalizes_and_ground_reflects (test_transport.TransportTests.test_gaussian_normalizes_and_ground_reflects) ... ok
+test_scene_source_ids_timestamps_and_curve_sums (test_transport.TransportTests.test_scene_source_ids_timestamps_and_curve_sums) ... ok
+test_zero_emissions_zero_proxy_and_mass (test_transport.TransportTests.test_zero_emissions_zero_proxy_and_mass) ... ok
+test_exact_source_tract_group_attribution (test_community.CommunityMath.test_exact_source_tract_group_attribution) ... ok
+test_robust_matches_enumerated_max_min (test_community.CommunityMath.test_robust_matches_enumerated_max_min) ... ok
+test_zero_baseline_percent_unknown (test_community.CommunityMath.test_zero_baseline_percent_unknown) ... ok
+test_age_objective_uses_actual_source_counts (test_community.ExportChecks.test_age_objective_uses_actual_source_counts) ... ok
+test_all_plans_reconcile_tracts_and_budget (test_community.ExportChecks.test_all_plans_reconcile_tracts_and_budget) ... ok
+test_fixed_plan_price_and_cost_stress_keep_installations (test_community.ExportChecks.test_fixed_plan_price_and_cost_stress_keep_installations) ... ok
+test_season_reconciliation_and_robust_floor (test_community.ExportChecks.test_season_reconciliation_and_robust_floor) ... ok
+test_antimeridian_center_and_bounds (test_global_inventory.GlobalInventory.test_antimeridian_center_and_bounds) ... ok
+test_global_country_reconciliation_and_flags (test_global_inventory.GlobalInventory.test_global_country_reconciliation_and_flags) ... ok
+test_foreground_metrics (test_smoke.SmokeChecks.test_foreground_metrics) ... ok
+test_network_spatial_output_and_gradients (test_smoke.SmokeChecks.test_network_spatial_output_and_gradients) ... ok
+test_site_split_stable (test_smoke.SmokeChecks.test_site_split_stable) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.317s
+
+OK

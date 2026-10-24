@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "model_version": "screening-v1",
+  "provenance": [
+    {
+      "path": "contracts/parameters.json",
+      "sha256": "678b91b346e2bf0fb154627f5a63190bdb16ac640162387a40f7d971f232ab61"
+    },
+    {
+      "path": "data/verified/processed/flares_regional_2023.geojson",
+      "sha256": "ab9e4b61c141c0fa45e0ef47d911b746bb88f14e4384c7702a0bad4a1ce00839"
+    },
+    {
+      "path": "data/verified/processed/pipelines.geojson",
+      "sha256": "c0bab512a85ca88be458bcaa1653f40c5a7f1e6974820d8a3204163663acd7dc"
+    },
+    {
+      "path": "data/verified/processed/gas_price_2023.json",
+      "sha256": "2ae44965edff8667754d01fef795824d568dcb2be8132db9d4c21770f0dfc3d6"
+    }
+  ],
+  "exposure_benefits_sha256": "9f1caae7ab2024798c0e5d096ecab82fee4fd56f4c64b91bbdec5810cd01a1bd",
+  "checks": {
+    "unique_eligible_selections": true,
+    "budget_feasibility": true,
+    "recomputed_totals": true,
+    "capture_consistency": true,
+    "balanced_npv_retention": true,
+    "exported_frontier_nondominance": true,
+    "full_source_benefits_alignment": true
+  },
+  "scenario_count": 3,
+  "plan_count": 25,
+  "solve_seconds": 3.4632934173569083,
+  "default_balanced": {
+    "id": "budget-5m-benchmark-balanced",
+    "name": "Balanced",
+    "preset": "Balanced",
+    "selected_ids": [
+      "wb-2023-row-142545",
+      "wb-2023-row-143105",
+      "wb-2023-row-143921",
+      "wb-2023-row-144448"
+    ],
+    "capex_usd": 4965152.640339777,
+    "npv_usd": 19753959.90950683,
+    "annual_captured_m3": 69641944.2,
+    "annual_sellable_mmbtu": 2570054.239912333,
+    "annual_margin_usd": 5077441.665456509,
+    "exposure_benefit": 65120.755601949575,
+    "exposure_reduction_pct": 3.640116461002153,
+    "assumption_version": "screening-2023-v1",
+    "npv_floor_usd": 18766261.91403149,
+    "solver_status": "optimal",
+    "solver_gap": 0.0,
+    "solve_seconds": 0.09906883304938674,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "on_sampled_frontier": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "source_commit": "2c2238213e6aca270cd4b3220e4761faee7e786a",
+  "checks": {
+    "transport": {
+      "finite_nonnegative_receptor_proxy": true,
+      "capture_does_not_increase_receptor_proxy": true,
+      "preinstall_mass_unchanged": true,
+      "mass_budget_baseline": true,
+      "mass_budget_capture": true,
+      "timestep_receptor_l1_under_one_percent": true,
+      "pulse_refinement_l1_under_five_percent": true,
+      "export_rounding_l1_under_point_one_percent": true,
+      "geometry_finite_bounded": true
+    },
+    "community": {
+      "source_tract_regional_conservation": true,
+      "allocated_age_counts_conserved": true,
+      "all_hours_seasons_reconcile_annual": true,
+      "selected_ids_unique_eligible": true,
+      "all_budgets_feasible": true,
+      "reductions_never_exceed_baseline": true
+    },
+    "experiments": [
+      "location groups disjoint across splits",
+      "checkpoint hash matches published result",
+      "foreground metrics reconcile confusion counts",
+      "checkpoint epoch chosen by validation",
+      "split counts reconcile manifest"
+    ]
+  },
+  "artifacts": [
+    {
+      "url": "/data/extensions/transport/scene.json",
+      "bytes": 4214278,
+      "gzip_bytes": 1264623,
+      "sha256": "a85519fc4093dcd3ee1eb99b93a26e07d47b8f0164e20b918a2930594aecc735"
+    },
+    {
+      "url": "/data/extensions/transport/diagnostics.json",
+      "bytes": 4157,
+      "gzip_bytes": 2073,
+      "sha256": "17fe9f46859feb40843d7184c4ac438ae2c280df470df45857070d68014652cc"
+    },
+    {
+      "url": "/data/extensions/community/community.json",
+      "bytes": 10333786,
+      "gzip_bytes": 1730118,
+      "sha256": "a586deec8b67ea0462079fbd923071a5b404851d116012384b4220a90064ae8b"
+    },
+    {
+      "url": "/data/extensions/community/robustness.json",
+      "bytes": 97261,
+      "gzip_bytes": 29061,
+      "sha256": "97cc059598df0ce18cec3d43af67f204da6cb532f92863eb169962f46db503d5"
+    },
+    {
+      "url": "/data/extensions/community/global-inventory.json",
+      "bytes": 60603,
+      "gzip_bytes": 14140,
+      "sha256": "0859126a469f4cb35e4058351a3f8241a11b842ac5d19a3279dde9732379b934"
+    },
+    {
+      "url": "/data/extensions/experiments/examples/example-0.png",
+      "bytes": 82624,
+      "gzip_bytes": 81295,
+      "sha256": "aaabe0ea1186cf793ef07737d561c52607c3d4118900a8e0604352b96bb2f02f"
+    },
+    {
+      "url": "/data/extensions/experiments/examples/example-1.png",
+      "bytes": 81766,
+      "gzip_bytes": 80609,
+      "sha256": "ded8fd3ef443ede69b4902fb4ef388cc52cb4d6c91df635ae1072f86e2ccd854"
+    },
+    {
+      "url": "/data/extensions/experiments/examples/example-2.png",
+      "bytes": 63915,
+      "gzip_bytes": 63075,
+      "sha256": "8d6e235a2fcdbeddbbbd057931e45f867ce31b84024b3fefb1292944ce53637e"
+    },
+    {
+      "url": "/data/extensions/experiments/results.json",
+      "bytes": 3268,
+      "gzip_bytes": 1377,
+      "sha256": "5147fdfb65c83fc67d16b71442480268fb7e86b252537a7e8d9e0e3d913a3e22"
+    }
+  ],
+  "original_assets_unchanged": true
+}

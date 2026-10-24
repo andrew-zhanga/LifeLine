@@ -1,48 +1,74 @@
-# LifeLine · FlareWise demo
+# LifeLine · FlareWise
 
-An interactive hackathon prototype for exploring gas flares, wind, communities, and capture-project trade-offs.
+A historical investment-screening product: **where should a limited flare-capture budget go, considering gas value and people downwind?**
 
-## Run locally
+The app preserves the interactive globe and camera journey into South Texas, now using actual prepared 2023 data, a full-year wind-driven relative exposure model and budgeted integer portfolios. The investment model is deterministic screening, not a pollution monitor or health forecast. The additive simulation workbench keeps its transport and satellite research experiments explicitly separate from that annual model.
+
+## Run the app
 
 ```sh
 cd demo
 npm ci
-npm run dev -- --port 5173
+npm run dev -- --port 5174
 ```
 
-Open http://localhost:5173. Requires Node.js 20.19+ or a compatible newer release.
-
-## Build
+Open [localhost:5174](http://localhost:5174). Node.js 20.19+ or a compatible newer release is required. Static analytical assets are committed under `demo/public/data/`; no source download or Python run is required to use the app.
 
 ```sh
-cd demo
 npm run build
+npm exec vite preview -- --host 127.0.0.1 --port 5173
 ```
 
-The production files are generated in `demo/dist`.
+## Judge walkthrough
 
-## Explore
+1. Explore the 8,783-site global 2023 inventory, then fly into the South Texas study box.
+2. Step or play December 10–11 hourly weather. Inspect a source and a community. Time changes wind and the modeled field, never installations.
+3. Compare exact Financial, Balanced and Exposure selections at $2m/$5m/$10m. At $5m Financial and Balanced coincide; the app explicitly explains that result. At $10m they differ.
+4. Switch Baseline / After capture using identical weather and legend thresholds. Click a real frontier point to load its exact matching residual map.
+5. Explore population density/age layers, pipelines, sources and real wind arrows. Turn off Basemap to rehearse the local Census-geography fallback.
+6. Open Sources & assumptions, or export the selected scenario with actual IDs, metrics and provenance.
 
-- Interactive globe and camera flight to Eagle Ford, Texas.
-- Financial, Balanced, and Exposure scenario presets.
-- Budget slider updating selected projects and summary metrics.
-- Hourly wind playback and illustrative downwind footprints.
-- Baseline/after-capture comparison.
-- Layer controls for flares, wind, community circles, illustrative pipelines, capture selections, and population/age views.
-- Clickable site and community details, plus an interactive scenario chart.
+## Simulation workbench extension
 
-All site locations, financial values, population figures, and exposure results are illustrative. This prototype demonstrates interactions; it does not provide validated financial or health estimates. Map tiles and fonts require internet access.
+Open **Simulation workbench** from the header. It adds a smooth Three.js transport scene with actual historical winds, mass-preserving capture and source-focused camera inspection; a Financial/Balanced/Community site comparison with separate Census age objectives; fixed-plan seasonal and economic stress tests; and global country inventory discovery. The Satellite lab presents a separate industrial-smoke segmentation experiment when its verified results are available.
 
-![Demo preview](demo/screenshots/demo-desktop.png)
+The transport scene uses eight real sources and seventeen cell receptors over eight hours. It is an explicitly assumed Gaussian gas-volume proxy model, distinct from the annual screening calculation. Geography is schematic and height is exaggerated sixfold. Global inventory coverage does not imply global economic modeling. External satellite-map links provide location context; no Street View availability is asserted.
 
-See [demo documentation](demo/README.md) for more details.
+[Extension plan](docs/EXTENSION_PLAN.md), [status](docs/EXTENSION_STATUS.md), and [extended presentation evidence](presentation/extensions/README.md) preserve the original build and document the additions.
 
-## Verified data for the next build
+```sh
+.data-venv/bin/python scripts/transport/build_transport.py
+.data-venv/bin/python scripts/community/build.py
+.data-venv/bin/python scripts/community/global_inventory.py
+.data-venv/bin/python scripts/assemble_extensions.py
+.data-venv/bin/python scripts/make_extension_assets.py
+```
 
-The [data bundle](data/verified/README.md) contains prepared 2023 flare, weather, population, pipeline, and gas-price inputs, with source manifests and validation results. The running frontend still uses its original dummy data; integration is the next implementation step.
+## Reproduce the calculations
 
-See the [build contract](data/verified/build_contract.json) for assumptions and scope. Retrieval and preparation scripts are in `scripts/`; large raw downloads and the local Python environment are excluded from Git.
+Prepared inputs are in `data/verified/processed/`. Raw acquisition is not needed for this build.
 
-## Coordinated full-build plan
+```sh
+python3 -m venv .data-venv
+.data-venv/bin/pip install -r scripts/build-requirements.txt
+.data-venv/bin/python scripts/model/build_exposure.py
+.data-venv/bin/python scripts/portfolio/build.py
+.data-venv/bin/python scripts/assemble_app.py
+.data-venv/bin/python scripts/make_pitch_assets.py
+```
 
-The [execution plan](docs/EXECUTION_PLAN.md) defines the parallel agent roles, feature behavior, calculation contracts, GitHub checkpoints and presentation deliverables. Start a new implementation chat with the [ready-to-paste build prompt](docs/BUILD_PROMPT.md). The [pitch brief](docs/PITCH_BRIEF.md) carries the product context, and [build status](docs/BUILD_STATUS.md) records what is complete versus still planned.
+Model: 422 sources × 7,543 allocated cells, 71,862 sparse links, all 8,760 hours, actual 48-hour replay. Portfolios: 392 eligible sources, three supported budgets, observed 2023 benchmark price, named objectives and sampled nondominated feasible points. Every displayed point has its own precomputed map. Assumptions are centralized in `contracts/parameters.json`; interfaces in `contracts/app-v1.md`.
+
+```sh
+.data-venv/bin/python -m unittest discover -s tests/model -v
+.data-venv/bin/python -m unittest discover -s tests/portfolio -v
+node --test tests/ui/data.test.mjs
+```
+
+## Evidence and limits
+
+The [presentation pack](presentation/README.md) contains the three-minute script, seven-slide storyboard, claim ledger, reproducible figures, screenshots and judge Q&A. [Build status](docs/BUILD_STATUS.md) records Git checkpoints and verification. [Source provenance](data/verified/README.md) documents the retrieved inputs.
+
+Volumes are satellite estimates; hourly source activity is assumed constant. Population is allocated uniformly inside Census tracts. The kernel is an uncalibrated relative index, not concentration or personal exposure. Capture efficiency, heating value and project costs are assumptions; proximity to a pipeline does not establish access or capacity. Solver optimality applies only to the stated screening objective. No measured environmental validation or causal health claim is made.
+
+All analytical assets are served locally. Basemap tiles and optional web fonts use the network; local Census geography and system-font fallbacks keep the regional decision legible. This is not a service-worker-installed offline application. Public deployment is optional and not configured by this build.

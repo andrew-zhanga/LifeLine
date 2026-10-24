@@ -1,0 +1,13 @@
+{
+  "download_file": "flarewise-budget-5m-benchmark-financial.json",
+  "scenario_id": "budget-5m-benchmark",
+  "plan_id": "budget-5m-benchmark-financial",
+  "selected_count": 4,
+  "npv_usd": 19753959.90950683,
+  "verified": true,
+  "frontier_export": {
+    "plan_id": "budget-10m-benchmark-frontier-3",
+    "npv_usd": 26253720.81543259,
+    "selected_count": 9
+  }
+}

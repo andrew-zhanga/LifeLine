@@ -1,0 +1,25 @@
+{
+  "basis": "Automation click through visible DOM label; includes connector latency, not isolated rendering time",
+  "samples": [
+    {
+      "plan": "Financial",
+      "ms": 300,
+      "visible_label": "Financial · 4 fixed installations\nExposure · 2023 period average\nAnnual activity proxy × recurring hourly weather"
+    },
+    {
+      "plan": "Exposure",
+      "ms": 301,
+      "visible_label": "Exposure · 5 fixed installations\nExposure · 2023 period average\nAnnual activity proxy × recurring hourly weather"
+    },
+    {
+      "plan": "Financial",
+      "ms": 340,
+      "visible_label": "Financial · 4 fixed installations\nExposure · 2023 period average\nAnnual activity proxy × recurring hourly weather"
+    },
+    {
+      "plan": "Exposure",
+      "ms": 318,
+      "visible_label": "Exposure · 5 fixed installations\nExposure · 2023 period average\nAnnual activity proxy × recurring hourly weather"
+    }
+  ]
+}

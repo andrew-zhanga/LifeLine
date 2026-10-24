@@ -1,0 +1,247 @@
+/Users/aditya/Documents/ChatGPT/CleanTechHackathon/scripts/prepare_data.py:34: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+  g=transform(project,shape(sr.shape.__geo_interface__))
+/Users/aditya/Documents/ChatGPT/CleanTechHackathon/scripts/prepare_data.py:89: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+  g=transform(to_m,shape(f['geometry'])); minx,miny,maxx,maxy=g.bounds
+/Users/aditya/Documents/ChatGPT/CleanTechHackathon/scripts/prepare_data.py:101: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+  grid.append(feature(mapping(transform(to_ll,part)),q))
+/Users/aditya/Documents/ChatGPT/CleanTechHackathon/scripts/prepare_data.py:102: DeprecationWarning: The 'shapely.ops.transform()' function is deprecated. Use 'shapely.transform()' or 'shapely.transform_coordseq()' instead. See https://shapely.readthedocs.io/en/latest/manual.html#shapely.ops.transform for more details.
+  receptors.append(feature(mapping(transform(to_ll,part.representative_point())),q))
+{
+  "study_bbox": [
+    -100.2,
+    27.5,
+    -97.5,
+    29.5
+  ],
+  "buffer_bbox": [
+    -100.5,
+    27.25,
+    -97.25,
+    29.75
+  ],
+  "checks": {
+    "unique_flare_ids": true,
+    "population_join_complete": true,
+    "age_counts_sum_to_population": true,
+    "weather_hourly_axis_complete": true,
+    "weather_units_and_ranges_valid": true,
+    "wind_from_direction_cardinals": true,
+    "pipeline_response_not_truncated": true,
+    "before_after_monotonic": true
+  },
+  "limitations": [
+    "2023 satellite-estimated annual flare volumes; not current operations or metered flow.",
+    "2019\u20132023 ACS population is a five-year estimate, not a census on each playback date.",
+    "Population is tract-level; the 5 km grid uses uniform area allocation, not observed residential locations.",
+    "Nine sampled ERA5 cells are a coarse weather mesh, not street-level wind.",
+    "Pipeline geometry is context only; availability, capacity, tie-in permission and costs unknown.",
+    "Capture efficiency, installation cost, operating cost and project life remain scenario assumptions.",
+    "Smoke-test exposure is a relative screening calculation, not concentration or health risk."
+  ],
+  "flares": {
+    "global_positive_volume_sites": 8783,
+    "core_sites": 392,
+    "buffer_inclusive_sites": 422,
+    "excluded_nonpositive_or_invalid": 580,
+    "core_annual_bcm": 1.187661756
+  },
+  "volume_column_audit": {
+    "discrepant_global_rows": 20,
+    "examples": [
+      {
+        "row": 137354,
+        "country": "China",
+        "bcm_raw": 0.136,
+        "million_m3_raw": 135.52192,
+        "relative_difference": 0.003527695003140493
+      },
+      {
+        "row": 137360,
+        "country": "China",
+        "bcm_raw": 0.000968,
+        "million_m3_raw": 0.967522,
+        "relative_difference": 0.0004940456134330573
+      },
+      {
+        "row": 137403,
+        "country": "China",
+        "bcm_raw": 0.00118,
+        "million_m3_raw": 1.184799,
+        "relative_difference": 0.004050476072312499
+      },
+      {
+        "row": 137409,
+        "country": "China",
+        "bcm_raw": 0.0268,
+        "million_m3_raw": 26.830403,
+        "relative_difference": 0.0011331548020355763
+      },
+      {
+        "row": 137420,
+        "country": "China",
+        "bcm_raw": 0.000513,
+        "million_m3_raw": 0.512779,
+        "relative_difference": 0.0004309848882267541
+      }
+    ],
+    "canonical_column": "Flaring Vol (million m3)",
+    "normalization": "m3 = million_m3 * 1e6; bcm = million_m3 / 1000",
+    "cross_check": "MMscfd consistent within 0.1%; raw bcm can be rounded"
+  },
+  "population": {
+    "tracts": 763,
+    "matched": 763,
+    "missing": 0,
+    "population_full_intersecting_tracts": 3551394,
+    "communities": 157,
+    "zero_population_tracts": 5,
+    "area_weighted_grid_cells": 7543,
+    "allocated_population": 3551394.0,
+    "allocation_conserves_tract_totals": true
+  },
+  "weather": {
+    "locations": [
+      {
+        "id": "weather_27.75_-100",
+        "returned_coordinates": [
+          -100.0,
+          27.75
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.1,
+        "speed100m_max": 17.33,
+        "mean_speed100m": 6.325190639269406,
+        "calm_hours_below_0_5ms": 17,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_27.75_-98",
+        "returned_coordinates": [
+          -98.0,
+          27.75
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.2,
+        "speed100m_max": 19.16,
+        "mean_speed100m": 6.1617865296803656,
+        "calm_hours_below_0_5ms": 17,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_27.75_-99",
+        "returned_coordinates": [
+          -99.0,
+          27.75
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.0,
+        "speed100m_max": 18.25,
+        "mean_speed100m": 6.451689497716895,
+        "calm_hours_below_0_5ms": 24,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_28.5_-100",
+        "returned_coordinates": [
+          -100.0,
+          28.5
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.1,
+        "speed100m_max": 21.9,
+        "mean_speed100m": 5.883132420091324,
+        "calm_hours_below_0_5ms": 16,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_28.5_-98",
+        "returned_coordinates": [
+          -98.0,
+          28.5
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.1,
+        "speed100m_max": 17.2,
+        "mean_speed100m": 5.956522831050228,
+        "calm_hours_below_0_5ms": 19,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_28.5_-99",
+        "returned_coordinates": [
+          -99.0,
+          28.5
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.14,
+        "speed100m_max": 18.25,
+        "mean_speed100m": 5.544713470319635,
+        "calm_hours_below_0_5ms": 43,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_29.25_-100",
+        "returned_coordinates": [
+          -100.0,
+          29.25
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.1,
+        "speed100m_max": 20.86,
+        "mean_speed100m": 5.444206621004566,
+        "calm_hours_below_0_5ms": 32,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_29.25_-98",
+        "returned_coordinates": [
+          -98.0,
+          29.25
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.0,
+        "speed100m_max": 16.21,
+        "mean_speed100m": 5.526845890410959,
+        "calm_hours_below_0_5ms": 34,
+        "direction_bins_45deg": 8
+      },
+      {
+        "id": "weather_29.25_-99",
+        "returned_coordinates": [
+          -99.0,
+          29.25
+        ],
+        "hours": 8760,
+        "speed100m_min": 0.0,
+        "speed100m_max": 18.84,
+        "mean_speed100m": 5.15076598173516,
+        "calm_hours_below_0_5ms": 39,
+        "direction_bins_45deg": 8
+      }
+    ],
+    "total_location_hours": 78840,
+    "missing_values": 0
+  },
+  "pipelines": {
+    "returned": 1385,
+    "server_count": 1385,
+    "clipped": 1385
+  },
+  "gas_price": {
+    "observations": 249,
+    "mean_observed_daily_usd_per_mmbtu": 2.533574297188755
+  },
+  "spatial": {
+    "sites_with_representative_receptor_within_30km": 422,
+    "sites_total": 422,
+    "max_nearest_receptor_km": 3.3803913618235613
+  },
+  "integration": {
+    "sampled_days": 365,
+    "fixed_selected_sites": 20,
+    "baseline_min": 5436.580026853122,
+    "baseline_max": 57796.30159168388,
+    "aggregate_reduction_pct": 17.411238673546258,
+    "all_after_values_at_or_below_baseline": true
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0",
+  "model_version": "screening-v1",
+  "checks": [
+    {
+      "plan_id": "budget-2m-benchmark-financial",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 0.7870638776450559
+    },
+    {
+      "plan_id": "budget-2m-benchmark-balanced",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 1.0243499180392333
+    },
+    {
+      "plan_id": "budget-2m-benchmark-exposure",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 13.387990559311985
+    },
+    {
+      "plan_id": "budget-2m-benchmark-frontier-1",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 12.996263171742667
+    },
+    {
+      "plan_id": "budget-2m-benchmark-frontier-2",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 7.659400216389077
+    },
+    {
+      "plan_id": "budget-2m-benchmark-frontier-3",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 7.444578489646759
+    },
+    {
+      "plan_id": "budget-2m-benchmark-frontier-4",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 6.551381177121502
+    },
+    {
+      "plan_id": "budget-2m-benchmark-frontier-5",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 1.3842212698434313
+    },
+    {
+      "plan_id": "budget-5m-benchmark-financial",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 3.640116461002155
+    },
+    {
+      "plan_id": "budget-5m-benchmark-balanced",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 3.640116461002155
+    },
+    {
+      "plan_id": "budget-5m-benchmark-exposure",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 17.38162256904447
+    },
+    {
+      "plan_id": "budget-5m-benchmark-frontier-1",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 16.998879217746364
+    },
+    {
+      "plan_id": "budget-5m-benchmark-frontier-3",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 15.95134932064976
+    },
+    {
+      "plan_id": "budget-5m-benchmark-frontier-4",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 14.238397946369506
+    },
+    {
+      "plan_id": "budget-5m-benchmark-frontier-5",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 10.297521375290989
+    },
+    {
+      "plan_id": "budget-5m-benchmark-frontier-6",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 4.063070884565433
+    },
+    {
+      "plan_id": "budget-10m-benchmark-financial",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 5.247851324276667
+    },
+    {
+      "plan_id": "budget-10m-benchmark-balanced",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 10.610729273080835
+    },
+    {
+      "plan_id": "budget-10m-benchmark-exposure",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 22.224818640042034
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-1",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 21.80835931900673
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-2",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 21.717215144935054
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-3",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 21.14376125151627
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-4",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 20.573423673246197
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-5",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 17.785085701511246
+    },
+    {
+      "plan_id": "budget-10m-benchmark-frontier-6",
+      "budget_feasible": true,
+      "totals_match": true,
+      "monotonic_all_frames": true,
+      "reduction_pct": 11.574241874037416
+    }
+  ],
+  "plan_count": 25,
+  "cell_count": 7543,
+  "replay_hours": 48,
+  "initial_analytical_gzip_bytes": 2560324,
+  "max_plan_gzip_bytes": 649238,
+  "initial_under_5mb": true,
+  "plans_under_10mb": true,
+  "assets": [
+    {
+      "path": "baseline.json",
+      "bytes": 2344876,
+      "gzip_bytes": 645534,
+      "sha256": "277ec7a4d002eff057057d6bfd0cde95b9c43103378d883cab6aca6ae8965546"
+    },
+    {
+      "path": "cells.geojson",
+      "bytes": 5707924,
+      "gzip_bytes": 956430,
+      "sha256": "59b61e9531eadf4fbf77e0d19aa1657bb81b0cd0effe936b1859313cbed43d1f"
+    },
+    {
+      "path": "communities.geojson",
+      "bytes": 77759,
+      "gzip_bytes": 11853,
+      "sha256": "05b6c5cd2d22d36f4814214f6447c28f386fa73042fe84c6a4f3e2dfae688e53"
+    },
+    {
+      "path": "economics.json",
+      "bytes": 526217,
+      "gzip_bytes": 75485,
+      "sha256": "fb99b91c037e7dec2382f102e73ec0df8b89601b8a507c4dd032b2b3071f2e99"
+    },
+    {
+      "path": "global.geojson",
+      "bytes": 3629116,
+      "gzip_bytes": 341540,
+      "sha256": "75e18251777cb07328a342d47993b83a7f08ceed4cea40a45b44766deaa0ee57"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 7559,
+      "gzip_bytes": 2873,
+      "sha256": "4a8a6b943fc7f0293d83eb9866ac21246d23f31dea3337a94f5518c24ba2fa59"
+    },
+    {
+      "path": "pipelines.geojson",
+      "bytes": 567772,
+      "gzip_bytes": 122887,
+      "sha256": "0d3c18d4f5dc8baf8a84b2c13f41b9dd6f0d90eed078fdb15e3f97daffb5bd67"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-balanced.json",
+      "bytes": 2347722,
+      "gzip_bytes": 645898,
+      "sha256": "2362b8f0bc1585b7485db1510b4fb6d8df9b4852295713a97fa1cae102d6fe90"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-exposure.json",
+      "bytes": 2358302,
+      "gzip_bytes": 648951,
+      "sha256": "7b245bb9cf265a9843d8432ced1eed476a1e948dba749d08589dbba4068ad99a"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-financial.json",
+      "bytes": 2345109,
+      "gzip_bytes": 645255,
+      "sha256": "350e97171f4ca09a5de4b648b6a11b61d12d0046d965a6eff471b7d1f90702c5"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-1.json",
+      "bytes": 2358202,
+      "gzip_bytes": 648959,
+      "sha256": "977a6382e3b27e5c6493e0b180563eebc408a1dc7d3e94f541a29039f2e5ed2c"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-2.json",
+      "bytes": 2358261,
+      "gzip_bytes": 649041,
+      "sha256": "83e8553d42b9adbf1ebecc2704951e6961364b224c8c2cc593907f0f330ac6a3"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-3.json",
+      "bytes": 2355955,
+      "gzip_bytes": 648296,
+      "sha256": "881cc8d667aa3aba187cd73d2f26986dd6fafd33d7760bc89e66f9a0b5728c55"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-4.json",
+      "bytes": 2356002,
+      "gzip_bytes": 648231,
+      "sha256": "983f6c60c69b30dd489076fa8fe4eb31f50f5be6fa3d2d00bb82fb5e60a98d48"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-5.json",
+      "bytes": 2355952,
+      "gzip_bytes": 648267,
+      "sha256": "cecce1419244aa09cfa4ab3c9391c25f5a42b437d309fd5d42a6eb842b9e2f2f"
+    },
+    {
+      "path": "plans/budget-10m-benchmark-frontier-6.json",
+      "bytes": 2347703,
+      "gzip_bytes": 645879,
+      "sha256": "8ae63bcd37e12b4e2fe59422801c230c2e70de65067a83ca91e83499ab520952"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-balanced.json",
+      "bytes": 2344950,
+      "gzip_bytes": 645509,
+      "sha256": "54cbbdc64d8e442bbf9f0e46cf226ff6c8849633d46d052b35a109d743ea23cf"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-exposure.json",
+      "bytes": 2358127,
+      "gzip_bytes": 649194,
+      "sha256": "dbad2710c42bbe0f4eded49985579596d3b27d0f9720312de4151f277b432c9b"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-financial.json",
+      "bytes": 2345001,
+      "gzip_bytes": 645440,
+      "sha256": "6722bc7d715d2f231a825f14f51e77284a0f233f1f200ba917ad7b15e1fa41da"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-frontier-1.json",
+      "bytes": 2355826,
+      "gzip_bytes": 648568,
+      "sha256": "c6e79303106da6d83e1cc94c57652e53e5ddce3dc1bfb5dbe74e251620b9299b"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-frontier-2.json",
+      "bytes": 2353336,
+      "gzip_bytes": 647986,
+      "sha256": "a59d7c73f2ffc03babc59a66c660e54bc18a60516392b9ba800de29d2a37b0be"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-frontier-3.json",
+      "bytes": 2353223,
+      "gzip_bytes": 647964,
+      "sha256": "4eb4949f0589a431cb5c1731e17a9f53ad14795ecc4291d862ddcfacf979c6bb"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-frontier-4.json",
+      "bytes": 2347432,
+      "gzip_bytes": 646154,
+      "sha256": "1b552063d9e6239ff502f2e861135cd44ca07d7921523d4dea3709f8ec87c51f"
+    },
+    {
+      "path": "plans/budget-2m-benchmark-frontier-5.json",
+      "bytes": 2344888,
+      "gzip_bytes": 645623,
+      "sha256": "7ed1449af67c79d254c1de1fff9e5efb432305b64c2ebe0f06a00ce246d95d75"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-balanced.json",
+      "bytes": 2345029,
+      "gzip_bytes": 645406,
+      "sha256": "b965b5338be6771ba60505195894f868237ab76055a58ee933145dfd396de571"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-exposure.json",
+      "bytes": 2358257,
+      "gzip_bytes": 649238,
+      "sha256": "10968b580867cf217f51e8e7e527e7735616e64ab19e4f5b29945971a8ab9c60"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-financial.json",
+      "bytes": 2345030,
+      "gzip_bytes": 645412,
+      "sha256": "d957415146ef984e7cdaab8706ab82936bf46caae04c991ecd4d5c02b9143f73"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-frontier-1.json",
+      "bytes": 2355808,
+      "gzip_bytes": 648539,
+      "sha256": "f4b97a3c2a12509c746e6f2d847e8b7fab8f065d4b206eaa5e06f6cfd86d0849"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-frontier-3.json",
+      "bytes": 2355731,
+      "gzip_bytes": 648437,
+      "sha256": "efc59b6b274b468f0ee6dfe604f5a5381057175ff1886b8d52846ed21ed2f652"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-frontier-4.json",
+      "bytes": 2355860,
+      "gzip_bytes": 648476,
+      "sha256": "5416005bdbf9fed7bcc0fffeeef8618785297810114577cf51217073c5015c2e"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-frontier-5.json",
+      "bytes": 2353262,
+      "gzip_bytes": 647852,
+      "sha256": "447daf8d62fdad1ede5a882655f4a3f38bc2eab7741d69379d15694412522365"
+    },
+    {
+      "path": "plans/budget-5m-benchmark-frontier-6.json",
+      "bytes": 2344962,
+      "gzip_bytes": 645365,
+      "sha256": "674fb7963a8530c3f419148f84522cb03dbeb42a45099c644a3b37871e2aa048"
+    },
+    {
+      "path": "scenarios.json",
+      "bytes": 21428,
+      "gzip_bytes": 3986,
+      "sha256": "829e6231a1ef23e019b9cfe726a3dc1b8ac3c127d68e6df86913ffbf655f716e"
+    },
+    {
+      "path": "sites.geojson",
+      "bytes": 186354,
+      "gzip_bytes": 15504,
+      "sha256": "b5d1a7e07fb7e6f5e24e3b584792e75cc8a07fc8f4d2b3735c5976793fde0519"
+    },
+    {
+      "path": "tracts.geojson",
+      "bytes": 1317294,
+      "gzip_bytes": 380694,
+      "sha256": "dd1f57e6cc176871d848a4924d25de27d0fda2a614d9da1aec90cf5c402ed4d5"
+    },
+    {
+      "path": "weather.json",
+      "bytes": 23314,
+      "gzip_bytes": 3538,
+      "sha256": "298a7a7cb8c30244842aecd00934e19cbe854095bd3ebe3fdd457fd2f17ea5f0"
+    }
+  ]
+}
