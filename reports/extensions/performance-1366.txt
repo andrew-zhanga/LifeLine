@@ -1,0 +1,16 @@
+Measured rendering
+Median / p95 interval
+16.7 / 17.6 ms
+Median-frame FPS
+59.9
+Frames over 33 ms
+0%
+Sample
+180 frames / 3 s
+Draw calls / triangles
+39 / 6,016
+Visible puff instances
+1241
+DPR / quality multiplier
+1 / 1
+Rolling intervals, no FPS cap or smoothing. Hidden tabs excluded; rendering pauses while hidden.

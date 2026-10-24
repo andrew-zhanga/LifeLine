@@ -24,3 +24,13 @@ ax.set_xticks(range(4),['Winter','Spring','Summer','Autumn']);ax.set_ylabel('Pop
 for ext in ['png','svg']:fig.savefig(OUT/f'seasonal-robustness.{ext}',dpi=180)
 plt.close(fig)
 print(OUT)
+import csv,hashlib
+with (OUT/'claims.csv').open('w',newline='') as f:
+ writer=csv.DictWriter(f,fieldnames=['claim','value','unit','source','scenario','limitation']);writer.writeheader()
+ for pid in ['budget-10m-benchmark-financial','budget-10m-benchmark-balanced','community-10m-population','community-5m-under5','community-5m-age65plus']:
+  p=plans[pid];g=p.get('objective_group') or 'population'
+  if g not in p['regional']:g='population'
+  writer.writerow({'claim':'NPV','value':p['npv_usd'],'unit':'USD seven-year screening NPV','source':'data/build/community/community.json','scenario':pid,'limitation':'Assumed costs/price; no engineering feasibility claim'})
+  writer.writerow({'claim':f'{g} index reduction','value':p['regional'][g]['reduction_pct'],'unit':'percent','source':'data/build/community/community.json','scenario':pid,'limitation':'Relative age/population-weighted screening index, not health improvement'})
+ diag=json.loads((ROOT/'data/build/transport/diagnostics.json').read_text())
+ writer.writerow({'claim':'Emission pulse refinement L1 difference','value':diag['emission_discretization_sensitivity']['receptor_relative_l1_difference']*100,'unit':'percent','source':'data/build/transport/diagnostics.json','scenario':'120s versus60s pulses','limitation':'Numerical sensitivity, not environmental validation'})

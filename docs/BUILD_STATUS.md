@@ -66,3 +66,8 @@ A completed scripts/model, data/build/exposure, tests/model. B completed scripts
 Relative screening index, not measured pollutant concentration, health prediction or a trained model. Constant annual activity, uniform tract-area population allocation, coarse wind mesh, uncalibrated kernel, assumed costs/capture/gas composition, unknown pipeline rights/capacity. 30 buffer sources remain background. No public deployment was configured. Basemap/fonts use network; local geography/system fonts provide a fallback, but disconnected cold boot/service-worker caching is not claimed. Existing MapLibre main-chunk size warning is nonfatal. Layers drawer intentionally overlays part of the right side when open and can be closed/scrolls.
 
 Presentation entry: presentation/README.md. Use pitch.md and slide-outline.md with the corresponding claims.csv. Screenshot 00 is the old prototype and must not be used as final model evidence. Further work should be a user-directed extension or engineering validation, not a restart of this completed core build.
+
+
+## Subsequent authorized extensions
+
+The original completed checkpoint above is preserved. See [EXTENSION_STATUS.md](EXTENSION_STATUS.md) for the completed additive simulation, demographic, robustness and satellite-research work. The separate research network does not change the core screening model into a trained exposure model.

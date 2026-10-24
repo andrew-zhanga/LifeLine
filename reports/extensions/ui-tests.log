@@ -1,0 +1,16 @@
+✔ same frame selection retains exact annual and hourly outputs (0.548958ms)
+✔ reject residual from wrong plan, grid ordering, absent hour or corrupt values (0.149ms)
+✔ financial units keep negative returns and missing values visible (8.442125ms)
+✔ HTML fallback and malformed JSON produce an actionable loader error (23.19425ms)
+✔ capture preserves old material and scales only eligible births (1.117666ms)
+✔ puffs appear only after real birth and interpolate from source to exported state (0.10125ms)
+✔ frame bracket and receptor curves share same exact interpolation clock (0.101834ms)
+✔ wind interpolation uses the puff clock and pre-emission receptor proxy stays zero (0.0885ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 99.477583

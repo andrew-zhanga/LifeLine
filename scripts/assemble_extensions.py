@@ -26,9 +26,17 @@ def main():
    b=dest.read_bytes();artifacts.append({'url':f'/data/extensions/{part}/{name}','bytes':len(b),'gzip_bytes':len(gzip.compress(b)),'sha256':hashlib.sha256(b).hexdigest()})
  experiment=ROOT/'data/build/experiments/results.json'
  if experiment.exists():
+  result=read(experiment)
+  verification=read(experiment.parent/'verification.json')
+  assert result['status']=='completed' and verification['all_passed']
+  assert hashlib.sha256((experiment.parent/'checkpoints/unet-best.pt').read_bytes()).hexdigest()==result['checkpoint_sha256']
+  checks['experiments']=verification['checks']
   dest=OUT/'experiments';dest.mkdir(exist_ok=True)
   shutil.copy2(experiment,dest/'results.json')
   shutil.copytree(experiment.parent/'examples',dest/'examples',dirs_exist_ok=True)
+  for path in sorted(dest.rglob('*')):
+   if path.is_file():
+    b=path.read_bytes();artifacts.append({'url':'/data/extensions/'+str(path.relative_to(OUT)),'bytes':len(b),'gzip_bytes':len(gzip.compress(b)),'sha256':hashlib.sha256(b).hexdigest()})
  report={'schema_version':'1.0','source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'checks':checks,'artifacts':artifacts,'original_assets_unchanged':True}
  (ROOT/'reports/extensions/assembly.json').write_text(json.dumps(report,indent=2)+'\n')
  print(json.dumps(report,indent=2))

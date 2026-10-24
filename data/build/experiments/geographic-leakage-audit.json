@@ -1,0 +1,6 @@
+{
+  "site_ids": 458,
+  "overlapping_site_pairs": 21,
+  "disjoint_location_groups": 439,
+  "rule": "Overlapping per-site observed WGS84 footprint envelopes are unioned before assigning any split."
+}

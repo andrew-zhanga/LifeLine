@@ -10,3 +10,8 @@
 - `sensitivity-source.json`: actual scenario results behind the sensitivity chart.
 
 Recreate figures and text with `.data-venv/bin/python scripts/make_pitch_assets.py` after assembly. Matplotlib figures depict saved results, not fabricated scientific imagery. Numerical artifacts retain full precision; browser arrays have six significant digits. Screenshots are presentation recovery assets, not substitutes for numerical verification.
+
+
+## Additive simulation and research evidence
+
+See [extensions/README.md](extensions/README.md) for the 3D replay, demographic priorities, stress tests, global inventory and completed satellite-segmentation experiment. The original pitch assets remain available.

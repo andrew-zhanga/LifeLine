@@ -1,0 +1,12 @@
+claim,value,unit,source,scenario,limitation
+NPV,33644071.29933704,USD seven-year screening NPV,data/build/community/community.json,budget-10m-benchmark-financial,Assumed costs/price; no engineering feasibility claim
+population index reduction,5.247851324276667,percent,data/build/community/community.json,budget-10m-benchmark-financial,"Relative age/population-weighted screening index, not health improvement"
+NPV,32134301.719933182,USD seven-year screening NPV,data/build/community/community.json,budget-10m-benchmark-balanced,Assumed costs/price; no engineering feasibility claim
+population index reduction,10.610729273080837,percent,data/build/community/community.json,budget-10m-benchmark-balanced,"Relative age/population-weighted screening index, not health improvement"
+NPV,19720067.705265373,USD seven-year screening NPV,data/build/community/community.json,community-10m-population,Assumed costs/price; no engineering feasibility claim
+population index reduction,22.22481864004204,percent,data/build/community/community.json,community-10m-population,"Relative age/population-weighted screening index, not health improvement"
+NPV,8694124.694788111,USD seven-year screening NPV,data/build/community/community.json,community-5m-under5,Assumed costs/price; no engineering feasibility claim
+under5 index reduction,17.67854304755539,percent,data/build/community/community.json,community-5m-under5,"Relative age/population-weighted screening index, not health improvement"
+NPV,8722618.058910891,USD seven-year screening NPV,data/build/community/community.json,community-5m-age65plus,Assumed costs/price; no engineering feasibility claim
+age65plus index reduction,14.955625884202371,percent,data/build/community/community.json,community-5m-age65plus,"Relative age/population-weighted screening index, not health improvement"
+Emission pulse refinement L1 difference,0.45266451585840617,percent,data/build/transport/diagnostics.json,120s versus60s pulses,"Numerical sensitivity, not environmental validation"
