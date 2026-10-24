@@ -31,4 +31,4 @@ Do not describe the industrial-smoke network as operational gas-flare detection 
 
 ## Recording
 
-Narration is computer-generated (macOS Samantha). The final MP4 uses actual recorded product footage and browser screenshots, with sourced title cards. Spoken claims remain confident and concise; detailed scope and source notes belong here and in Q&A.
+Narration is computer-generated (Microsoft Andrew Multilingual Neural; refreshed from the original macOS Samantha voice). The final MP4 uses actual recorded product footage and browser screenshots, with sourced title cards. Spoken claims remain confident and concise; detailed scope and source notes belong here and in Q&A.

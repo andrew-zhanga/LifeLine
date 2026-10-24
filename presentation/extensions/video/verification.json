@@ -4,14 +4,41 @@
   "frame_rate": 30,
   "video_codec": "H.264",
   "audio_codec": "AAC stereo 48kHz",
-  "tts_voice": "macOS Samantha",
+  "tts_voice": "en-US-AndrewMultilingualNeural",
   "decode_passed": true,
-  "bytes": 8092324,
-  "sha256": "0e35415670f198e35e61e83c97476272d5eaae6682537594730abee8008d4910",
+  "bytes": 8086405,
+  "sha256": "655e60ee3b891735c1374d8e9f815486f18ae43286b12ba5ec52cd304dbbacd0",
   "visuals": "Verified browser screenshots, sourced cards, 30s actual live WebGL recording",
   "source_recording": "flarewise-scene.webm",
   "narration_words": 391,
   "subtitles": "Optional SRT with approximate sentence timing",
-  "audio_mean_db": -18.7,
-  "audio_peak_db": -4.7
+  "tts_provider": "Microsoft neural speech via edge-tts",
+  "visual_stream_unchanged": true,
+  "visual_stream_hash": "SHA256=4ee905767e6fc61ca05ce4394647a7248b3ed687d570c86cce4bb913e0147bed",
+  "voice_chapter_timing": [
+    {
+      "chapter": 0,
+      "native_seconds": 38.33,
+      "tempo_adjustment": 0.9878865979381444,
+      "timeline_seconds": 40
+    },
+    {
+      "chapter": 1,
+      "native_seconds": 44.16,
+      "tempo_adjustment": 1.0082191780821919,
+      "timeline_seconds": 45
+    },
+    {
+      "chapter": 2,
+      "native_seconds": 49.2,
+      "tempo_adjustment": 1.0081967213114755,
+      "timeline_seconds": 50
+    },
+    {
+      "chapter": 3,
+      "native_seconds": 43.68,
+      "tempo_adjustment": 0.9972602739726028,
+      "timeline_seconds": 45
+    }
+  ]
 }
