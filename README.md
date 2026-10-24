@@ -42,3 +42,7 @@ See [demo documentation](demo/README.md) for more details.
 The [data bundle](data/verified/README.md) contains prepared 2023 flare, weather, population, pipeline, and gas-price inputs, with source manifests and validation results. The running frontend still uses its original dummy data; integration is the next implementation step.
 
 See the [build contract](data/verified/build_contract.json) for assumptions and scope. Retrieval and preparation scripts are in `scripts/`; large raw downloads and the local Python environment are excluded from Git.
+
+## Coordinated full-build plan
+
+The [execution plan](docs/EXECUTION_PLAN.md) defines the parallel agent roles, feature behavior, calculation contracts, GitHub checkpoints and presentation deliverables. Start a new implementation chat with the [ready-to-paste build prompt](docs/BUILD_PROMPT.md). The [pitch brief](docs/PITCH_BRIEF.md) carries the product context, and [build status](docs/BUILD_STATUS.md) records what is complete versus still planned.
