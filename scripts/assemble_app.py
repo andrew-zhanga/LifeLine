@@ -19,6 +19,9 @@ def read(path):
     return json.loads(path.read_text())
 
 def write(name, data):
+    if isinstance(data, dict):
+        for key, value in META.items(): data.setdefault(key, value)
+        data.setdefault('provenance', {'implementation_commit': subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(), 'prepared_input_hashes': 'reports/input-integrity.json', 'exposure_manifest': 'data/build/exposure/exposure-manifest.json', 'portfolio_results': 'data/build/portfolios/scenarios.json'})
     target = OUT / name
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(data, separators=(',', ':'), allow_nan=False) + '\n')

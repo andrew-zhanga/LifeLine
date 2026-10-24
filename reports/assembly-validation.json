@@ -181,28 +181,28 @@
   "plan_count": 25,
   "cell_count": 7543,
   "replay_hours": 48,
-  "initial_analytical_gzip_bytes": 2558309,
-  "max_plan_gzip_bytes": 648991,
+  "initial_analytical_gzip_bytes": 2560324,
+  "max_plan_gzip_bytes": 649238,
   "initial_under_5mb": true,
   "plans_under_10mb": true,
   "assets": [
     {
       "path": "baseline.json",
-      "bytes": 2344615,
-      "gzip_bytes": 645287,
-      "sha256": "2e890a149328a816648fdf7e657c916d24ddc743a0634303e5a1dfc250977e95"
+      "bytes": 2344876,
+      "gzip_bytes": 645534,
+      "sha256": "277ec7a4d002eff057057d6bfd0cde95b9c43103378d883cab6aca6ae8965546"
     },
     {
       "path": "cells.geojson",
-      "bytes": 5707609,
-      "gzip_bytes": 956167,
-      "sha256": "1ebdca16166cce8ffe45a589c4902d6eaa8563a0b9e2533cecb2c7356fdd92ff"
+      "bytes": 5707924,
+      "gzip_bytes": 956430,
+      "sha256": "59b61e9531eadf4fbf77e0d19aa1657bb81b0cd0effe936b1859313cbed43d1f"
     },
     {
       "path": "communities.geojson",
-      "bytes": 77444,
-      "gzip_bytes": 11655,
-      "sha256": "d165861e08dae715b537bb57548f497a27f355ea4d565afdd2a17312c5da1e88"
+      "bytes": 77759,
+      "gzip_bytes": 11853,
+      "sha256": "05b6c5cd2d22d36f4814214f6447c28f386fa73042fe84c6a4f3e2dfae688e53"
     },
     {
       "path": "economics.json",
@@ -212,171 +212,171 @@
     },
     {
       "path": "global.geojson",
-      "bytes": 3628801,
-      "gzip_bytes": 341315,
-      "sha256": "f030899f46c7ede3b416781d35ef7a7cb6eaab1acd0218a31839eb2babde281a"
+      "bytes": 3629116,
+      "gzip_bytes": 341540,
+      "sha256": "75e18251777cb07328a342d47993b83a7f08ceed4cea40a45b44766deaa0ee57"
     },
     {
       "path": "manifest.json",
-      "bytes": 7298,
-      "gzip_bytes": 2785,
-      "sha256": "84430d7910e0e87fc59756a00a000033f5943fcbe2cbfd328eb561c5936e1919"
+      "bytes": 7559,
+      "gzip_bytes": 2873,
+      "sha256": "4a8a6b943fc7f0293d83eb9866ac21246d23f31dea3337a94f5518c24ba2fa59"
     },
     {
       "path": "pipelines.geojson",
-      "bytes": 567457,
-      "gzip_bytes": 122607,
-      "sha256": "62e36d39efd6b5a04bc5c2af9956581091a5a638819ab857fc4742bd8f307682"
+      "bytes": 567772,
+      "gzip_bytes": 122887,
+      "sha256": "0d3c18d4f5dc8baf8a84b2c13f41b9dd6f0d90eed078fdb15e3f97daffb5bd67"
     },
     {
       "path": "plans/budget-10m-benchmark-balanced.json",
-      "bytes": 2347461,
-      "gzip_bytes": 645654,
-      "sha256": "b0b7c6394a152187cf567bf219f1a2e8363c909ee43f357a89443eb1fcba20dd"
+      "bytes": 2347722,
+      "gzip_bytes": 645898,
+      "sha256": "2362b8f0bc1585b7485db1510b4fb6d8df9b4852295713a97fa1cae102d6fe90"
     },
     {
       "path": "plans/budget-10m-benchmark-exposure.json",
-      "bytes": 2358041,
-      "gzip_bytes": 648708,
-      "sha256": "a060937749eb47537a6ae3e723282ede77f1a40f043544cf82b3ac248015701a"
+      "bytes": 2358302,
+      "gzip_bytes": 648951,
+      "sha256": "7b245bb9cf265a9843d8432ced1eed476a1e948dba749d08589dbba4068ad99a"
     },
     {
       "path": "plans/budget-10m-benchmark-financial.json",
-      "bytes": 2344848,
-      "gzip_bytes": 645010,
-      "sha256": "72749f84bc3cb9589730f507d36414aac33982f50bad8c5fbfdf70b244193c1e"
+      "bytes": 2345109,
+      "gzip_bytes": 645255,
+      "sha256": "350e97171f4ca09a5de4b648b6a11b61d12d0046d965a6eff471b7d1f90702c5"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-1.json",
-      "bytes": 2357941,
-      "gzip_bytes": 648715,
-      "sha256": "4146b97a43f6c4ba5dc9c0c35e8644230a545c56fbadc2d4847aa7bb9965f4e4"
+      "bytes": 2358202,
+      "gzip_bytes": 648959,
+      "sha256": "977a6382e3b27e5c6493e0b180563eebc408a1dc7d3e94f541a29039f2e5ed2c"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-2.json",
-      "bytes": 2358000,
-      "gzip_bytes": 648794,
-      "sha256": "1d50d8bb30263875bcd12e52a8c9b8011fd2c627324aa726f7ba4d36fe9443fb"
+      "bytes": 2358261,
+      "gzip_bytes": 649041,
+      "sha256": "83e8553d42b9adbf1ebecc2704951e6961364b224c8c2cc593907f0f330ac6a3"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-3.json",
-      "bytes": 2355694,
-      "gzip_bytes": 648054,
-      "sha256": "1b0f735d91a366fe19577b08fc328e2dccb9d9d88cccf52e0d6d4f0dbdcaf87f"
+      "bytes": 2355955,
+      "gzip_bytes": 648296,
+      "sha256": "881cc8d667aa3aba187cd73d2f26986dd6fafd33d7760bc89e66f9a0b5728c55"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-4.json",
-      "bytes": 2355741,
-      "gzip_bytes": 647987,
-      "sha256": "6927671f4ffb3b314d9862f352a36882d257742ad988f33bc90fbad1e6524658"
+      "bytes": 2356002,
+      "gzip_bytes": 648231,
+      "sha256": "983f6c60c69b30dd489076fa8fe4eb31f50f5be6fa3d2d00bb82fb5e60a98d48"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-5.json",
-      "bytes": 2355691,
-      "gzip_bytes": 648022,
-      "sha256": "1c3b19d05b9ffdba3b897aa6573c2eaf120ff3d6734a8ef6d6d12cbc255175e5"
+      "bytes": 2355952,
+      "gzip_bytes": 648267,
+      "sha256": "cecce1419244aa09cfa4ab3c9391c25f5a42b437d309fd5d42a6eb842b9e2f2f"
     },
     {
       "path": "plans/budget-10m-benchmark-frontier-6.json",
-      "bytes": 2347442,
-      "gzip_bytes": 645635,
-      "sha256": "1decda5ef5cf20ac07647f252b8a68f81d0871400b64d9fa4494c34368f6b9dc"
+      "bytes": 2347703,
+      "gzip_bytes": 645879,
+      "sha256": "8ae63bcd37e12b4e2fe59422801c230c2e70de65067a83ca91e83499ab520952"
     },
     {
       "path": "plans/budget-2m-benchmark-balanced.json",
-      "bytes": 2344689,
-      "gzip_bytes": 645264,
-      "sha256": "cd59f54362d7c042f6d1b7d684ad717c4a94fd2d45047df592ec7844760c226b"
+      "bytes": 2344950,
+      "gzip_bytes": 645509,
+      "sha256": "54cbbdc64d8e442bbf9f0e46cf226ff6c8849633d46d052b35a109d743ea23cf"
     },
     {
       "path": "plans/budget-2m-benchmark-exposure.json",
-      "bytes": 2357866,
-      "gzip_bytes": 648949,
-      "sha256": "a152c011c97a217ed28631a0da482f4cf58e3d7a38d315d1372f517ea7c57a17"
+      "bytes": 2358127,
+      "gzip_bytes": 649194,
+      "sha256": "dbad2710c42bbe0f4eded49985579596d3b27d0f9720312de4151f277b432c9b"
     },
     {
       "path": "plans/budget-2m-benchmark-financial.json",
-      "bytes": 2344740,
-      "gzip_bytes": 645197,
-      "sha256": "9d3b2f84fd45b4e3ca7b855561f075bacf36f32542a661d0246268fb40ec01b0"
+      "bytes": 2345001,
+      "gzip_bytes": 645440,
+      "sha256": "6722bc7d715d2f231a825f14f51e77284a0f233f1f200ba917ad7b15e1fa41da"
     },
     {
       "path": "plans/budget-2m-benchmark-frontier-1.json",
-      "bytes": 2355565,
-      "gzip_bytes": 648324,
-      "sha256": "9fb7217664fe82e3697f2ea3cde813f43a5a9ee2c27dac1cd960e129b81911db"
+      "bytes": 2355826,
+      "gzip_bytes": 648568,
+      "sha256": "c6e79303106da6d83e1cc94c57652e53e5ddce3dc1bfb5dbe74e251620b9299b"
     },
     {
       "path": "plans/budget-2m-benchmark-frontier-2.json",
-      "bytes": 2353075,
-      "gzip_bytes": 647740,
-      "sha256": "114b83fd3dc69d1d464dffb0bd3e57379cb3226c7dffc4477f28c9eabc47d85e"
+      "bytes": 2353336,
+      "gzip_bytes": 647986,
+      "sha256": "a59d7c73f2ffc03babc59a66c660e54bc18a60516392b9ba800de29d2a37b0be"
     },
     {
       "path": "plans/budget-2m-benchmark-frontier-3.json",
-      "bytes": 2352962,
-      "gzip_bytes": 647721,
-      "sha256": "35a155c43bf357b89379500ca04c8c5ee0859487f1a674cd9599edef3be215f1"
+      "bytes": 2353223,
+      "gzip_bytes": 647964,
+      "sha256": "4eb4949f0589a431cb5c1731e17a9f53ad14795ecc4291d862ddcfacf979c6bb"
     },
     {
       "path": "plans/budget-2m-benchmark-frontier-4.json",
-      "bytes": 2347171,
-      "gzip_bytes": 645907,
-      "sha256": "cfe11b4f115b970e82fa98449acda61f80168a502f58b6a7f377e668f91f7bc6"
+      "bytes": 2347432,
+      "gzip_bytes": 646154,
+      "sha256": "1b552063d9e6239ff502f2e861135cd44ca07d7921523d4dea3709f8ec87c51f"
     },
     {
       "path": "plans/budget-2m-benchmark-frontier-5.json",
-      "bytes": 2344627,
-      "gzip_bytes": 645376,
-      "sha256": "40546fcbd3a67a6be74ba2bec49e3d09f3f86d0de2bfa722bd115659eccd8aa6"
+      "bytes": 2344888,
+      "gzip_bytes": 645623,
+      "sha256": "7ed1449af67c79d254c1de1fff9e5efb432305b64c2ebe0f06a00ce246d95d75"
     },
     {
       "path": "plans/budget-5m-benchmark-balanced.json",
-      "bytes": 2344768,
-      "gzip_bytes": 645162,
-      "sha256": "d70ad493443b8dc0e5267293295e8b4527229bef2ff0e658d6f22536abff689c"
+      "bytes": 2345029,
+      "gzip_bytes": 645406,
+      "sha256": "b965b5338be6771ba60505195894f868237ab76055a58ee933145dfd396de571"
     },
     {
       "path": "plans/budget-5m-benchmark-exposure.json",
-      "bytes": 2357996,
-      "gzip_bytes": 648991,
-      "sha256": "74c9f71febc2f8d35f679d9cc0f9b8e436069e4bb3d8c06bc7d6101a474bfbd8"
+      "bytes": 2358257,
+      "gzip_bytes": 649238,
+      "sha256": "10968b580867cf217f51e8e7e527e7735616e64ab19e4f5b29945971a8ab9c60"
     },
     {
       "path": "plans/budget-5m-benchmark-financial.json",
-      "bytes": 2344769,
-      "gzip_bytes": 645169,
-      "sha256": "be42ee2ff4ee51393a3fdf5fec3b38e7b6daf144b2dda85311f4abddc1c2c834"
+      "bytes": 2345030,
+      "gzip_bytes": 645412,
+      "sha256": "d957415146ef984e7cdaab8706ab82936bf46caae04c991ecd4d5c02b9143f73"
     },
     {
       "path": "plans/budget-5m-benchmark-frontier-1.json",
-      "bytes": 2355547,
-      "gzip_bytes": 648299,
-      "sha256": "aea573f7e68d023c7ed8eba486b095ef9e12487c670fd70349655d49e5241e4e"
+      "bytes": 2355808,
+      "gzip_bytes": 648539,
+      "sha256": "f4b97a3c2a12509c746e6f2d847e8b7fab8f065d4b206eaa5e06f6cfd86d0849"
     },
     {
       "path": "plans/budget-5m-benchmark-frontier-3.json",
-      "bytes": 2355470,
-      "gzip_bytes": 648193,
-      "sha256": "40855eda07f7d81c1e1c5222af116d718962499a28e03ea8b27bd5fd4df33c38"
+      "bytes": 2355731,
+      "gzip_bytes": 648437,
+      "sha256": "efc59b6b274b468f0ee6dfe604f5a5381057175ff1886b8d52846ed21ed2f652"
     },
     {
       "path": "plans/budget-5m-benchmark-frontier-4.json",
-      "bytes": 2355599,
-      "gzip_bytes": 648230,
-      "sha256": "32d3776cef9aefadd52a11854aab6d84f7096f89cc439a9eb6784d17069bd16f"
+      "bytes": 2355860,
+      "gzip_bytes": 648476,
+      "sha256": "5416005bdbf9fed7bcc0fffeeef8618785297810114577cf51217073c5015c2e"
     },
     {
       "path": "plans/budget-5m-benchmark-frontier-5.json",
-      "bytes": 2353001,
-      "gzip_bytes": 647606,
-      "sha256": "e4a48ce809db592ca8491c0f80950939882419990207e41f99d0b03ac33c47ae"
+      "bytes": 2353262,
+      "gzip_bytes": 647852,
+      "sha256": "447daf8d62fdad1ede5a882655f4a3f38bc2eab7741d69379d15694412522365"
     },
     {
       "path": "plans/budget-5m-benchmark-frontier-6.json",
-      "bytes": 2344701,
-      "gzip_bytes": 645120,
-      "sha256": "b0fceed60ad19991e9c4364a20e6eb86c9dd328f2eebd7f3ca0a7df651370d33"
+      "bytes": 2344962,
+      "gzip_bytes": 645365,
+      "sha256": "674fb7963a8530c3f419148f84522cb03dbeb42a45099c644a3b37871e2aa048"
     },
     {
       "path": "scenarios.json",
@@ -386,21 +386,21 @@
     },
     {
       "path": "sites.geojson",
-      "bytes": 186039,
-      "gzip_bytes": 15255,
-      "sha256": "3cfa07eb250bfc17ef356cae74ef085b014c214af890cdc24e8065948646db70"
+      "bytes": 186354,
+      "gzip_bytes": 15504,
+      "sha256": "b5d1a7e07fb7e6f5e24e3b584792e75cc8a07fc8f4d2b3735c5976793fde0519"
     },
     {
       "path": "tracts.geojson",
-      "bytes": 1316979,
-      "gzip_bytes": 380419,
-      "sha256": "f26a393311f23fb6831b6ea2fd012d0daf16a2008f034ccde546389e38671668"
+      "bytes": 1317294,
+      "gzip_bytes": 380694,
+      "sha256": "dd1f57e6cc176871d848a4924d25de27d0fda2a614d9da1aec90cf5c402ed4d5"
     },
     {
       "path": "weather.json",
-      "bytes": 23053,
-      "gzip_bytes": 3348,
-      "sha256": "795a7155ce75e8229fa291731598212bdf070567868ca3dddbd627d69c672c81"
+      "bytes": 23314,
+      "gzip_bytes": 3538,
+      "sha256": "298a7a7cb8c30244842aecd00934e19cbe854095bd3ebe3fdd457fd2f17ea5f0"
     }
   ]
 }
